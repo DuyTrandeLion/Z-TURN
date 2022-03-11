@@ -1,0 +1,331 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2.2 (lin64) Build 3118627 Tue Feb  9 05:13:49 MST 2021
+| Date         : Fri Mar 11 17:41:57 2022
+| Host         : SnowLion7520 running 64-bit Ubuntu 18.04.6 LTS
+| Command      : report_drc -file zturn_wrapper_drc_opted.rpt -pb zturn_wrapper_drc_opted.pb -rpx zturn_wrapper_drc_opted.rpx
+| Design       : zturn_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Synthesized
+------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 58
++---------+----------+-------------------------------------------------------------------+------------+
+| Rule    | Severity | Description                                                       | Violations |
++---------+----------+-------------------------------------------------------------------+------------+
+| DPIP-1  | Warning  | Input pipelining                                                  | 6          |
+| DPOP-1  | Warning  | PREG Output pipelining                                            | 24         |
+| DPOP-2  | Warning  | MREG Output pipelining                                            | 21         |
+| DPREG-4 | Warning  | DSP48E1_PregDynOpmodeZmuxP:                                       | 1          |
+| AVAL-4  | Advisory | enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND | 3          |
+| AVAL-5  | Advisory | enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND   | 3          |
++---------+----------+-------------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPIP-1#1 Warning
+Input pipelining  
+DSP zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/i_no_versal_es1_workaround.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP input zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/i_no_versal_es1_workaround.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/i_no_versal_es1_workaround.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP input zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/i_no_versal_es1_workaround.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/i_no_versal_es1_workaround.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP input zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/i_no_versal_es1_workaround.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#4 Warning
+Input pipelining  
+DSP zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP input zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#5 Warning
+Input pipelining  
+DSP zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP input zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#6 Warning
+Input pipelining  
+DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mac_muladd_16s_16ns_19s_31_4_1_U15/pnq_mac_muladd_16s_16ns_19s_31_4_1_DSP48_0_U/p_reg_reg input zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mac_muladd_16s_16ns_19s_31_4_1_U15/pnq_mac_muladd_16s_16ns_19s_31_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/i_no_versal_es1_workaround.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP output zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/i_no_versal_es1_workaround.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#2 Warning
+PREG Output pipelining  
+DSP zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP output zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#3 Warning
+PREG Output pipelining  
+DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_12s_80ns_90_5_1_U9/pnq_mul_12s_80ns_90_5_1_Multiplier_8_U/tmp_product output zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_12s_80ns_90_5_1_U9/pnq_mul_12s_80ns_90_5_1_Multiplier_8_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#4 Warning
+PREG Output pipelining  
+DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_12s_80ns_90_5_1_U9/pnq_mul_12s_80ns_90_5_1_Multiplier_8_U/tmp_product__0 output zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_12s_80ns_90_5_1_U9/pnq_mul_12s_80ns_90_5_1_Multiplier_8_U/tmp_product__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#5 Warning
+PREG Output pipelining  
+DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_13s_71s_71_5_1_U11/pnq_mul_13s_71s_71_5_1_Multiplier_10_U/tmp_product output zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_13s_71s_71_5_1_U11/pnq_mul_13s_71s_71_5_1_Multiplier_10_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#6 Warning
+PREG Output pipelining  
+DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/pnq_mul_40ns_40ns_80_2_1_Multiplier_9_U/tmp_product output zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/pnq_mul_40ns_40ns_80_2_1_Multiplier_9_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#7 Warning
+PREG Output pipelining  
+DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/pnq_mul_40ns_40ns_80_2_1_Multiplier_9_U/tmp_product__0 output zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/pnq_mul_40ns_40ns_80_2_1_Multiplier_9_U/tmp_product__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#8 Warning
+PREG Output pipelining  
+DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_43ns_36ns_79_3_1_U12/pnq_mul_43ns_36ns_79_3_1_Multiplier_11_U/tmp_product output zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_43ns_36ns_79_3_1_U12/pnq_mul_43ns_36ns_79_3_1_Multiplier_11_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#9 Warning
+PREG Output pipelining  
+DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_43ns_36ns_79_3_1_U12/pnq_mul_43ns_36ns_79_3_1_Multiplier_11_U/tmp_product__0 output zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_43ns_36ns_79_3_1_U12/pnq_mul_43ns_36ns_79_3_1_Multiplier_11_U/tmp_product__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#10 Warning
+PREG Output pipelining  
+DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_43ns_36ns_79_3_1_U12/pnq_mul_43ns_36ns_79_3_1_Multiplier_11_U/tmp_product__1 output zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_43ns_36ns_79_3_1_U12/pnq_mul_43ns_36ns_79_3_1_Multiplier_11_U/tmp_product__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#11 Warning
+PREG Output pipelining  
+DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_49ns_44ns_93_5_1_U13/pnq_mul_49ns_44ns_93_5_1_Multiplier_12_U/tmp_product output zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_49ns_44ns_93_5_1_U13/pnq_mul_49ns_44ns_93_5_1_Multiplier_12_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#12 Warning
+PREG Output pipelining  
+DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_50ns_50ns_100_5_1_U14/pnq_mul_50ns_50ns_100_5_1_Multiplier_13_U/tmp_product output zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_50ns_50ns_100_5_1_U14/pnq_mul_50ns_50ns_100_5_1_Multiplier_13_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#13 Warning
+PREG Output pipelining  
+DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_71ns_4ns_75_5_1_U2/pnq_mul_71ns_4ns_75_5_1_Multiplier_1_U/tmp_product output zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_71ns_4ns_75_5_1_U2/pnq_mul_71ns_4ns_75_5_1_Multiplier_1_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#14 Warning
+PREG Output pipelining  
+DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_73ns_6ns_79_5_1_U3/pnq_mul_73ns_6ns_79_5_1_Multiplier_2_U/tmp_product output zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_73ns_6ns_79_5_1_U3/pnq_mul_73ns_6ns_79_5_1_Multiplier_2_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#15 Warning
+PREG Output pipelining  
+DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_77ns_6ns_83_5_1_U8/pnq_mul_77ns_6ns_83_5_1_Multiplier_7_U/tmp_product output zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_77ns_6ns_83_5_1_U8/pnq_mul_77ns_6ns_83_5_1_Multiplier_7_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#16 Warning
+PREG Output pipelining  
+DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_77ns_6ns_83_5_1_U8/pnq_mul_77ns_6ns_83_5_1_Multiplier_7_U/tmp_product__0 output zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_77ns_6ns_83_5_1_U8/pnq_mul_77ns_6ns_83_5_1_Multiplier_7_U/tmp_product__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#17 Warning
+PREG Output pipelining  
+DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_82ns_6ns_88_5_1_U7/pnq_mul_82ns_6ns_88_5_1_Multiplier_6_U/tmp_product output zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_82ns_6ns_88_5_1_U7/pnq_mul_82ns_6ns_88_5_1_Multiplier_6_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#18 Warning
+PREG Output pipelining  
+DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_82ns_6ns_88_5_1_U7/pnq_mul_82ns_6ns_88_5_1_Multiplier_6_U/tmp_product__0 output zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_82ns_6ns_88_5_1_U7/pnq_mul_82ns_6ns_88_5_1_Multiplier_6_U/tmp_product__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#19 Warning
+PREG Output pipelining  
+DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_83ns_6ns_89_5_1_U4/pnq_mul_83ns_6ns_89_5_1_Multiplier_3_U/tmp_product output zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_83ns_6ns_89_5_1_U4/pnq_mul_83ns_6ns_89_5_1_Multiplier_3_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#20 Warning
+PREG Output pipelining  
+DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_83ns_6ns_89_5_1_U4/pnq_mul_83ns_6ns_89_5_1_Multiplier_3_U/tmp_product__0 output zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_83ns_6ns_89_5_1_U4/pnq_mul_83ns_6ns_89_5_1_Multiplier_3_U/tmp_product__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#21 Warning
+PREG Output pipelining  
+DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_87ns_6ns_93_5_1_U6/pnq_mul_87ns_6ns_93_5_1_Multiplier_5_U/tmp_product output zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_87ns_6ns_93_5_1_U6/pnq_mul_87ns_6ns_93_5_1_Multiplier_5_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#22 Warning
+PREG Output pipelining  
+DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_87ns_6ns_93_5_1_U6/pnq_mul_87ns_6ns_93_5_1_Multiplier_5_U/tmp_product__0 output zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_87ns_6ns_93_5_1_U6/pnq_mul_87ns_6ns_93_5_1_Multiplier_5_U/tmp_product__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#23 Warning
+PREG Output pipelining  
+DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_92ns_6ns_98_5_1_U5/pnq_mul_92ns_6ns_98_5_1_Multiplier_4_U/tmp_product output zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_92ns_6ns_98_5_1_U5/pnq_mul_92ns_6ns_98_5_1_Multiplier_4_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#24 Warning
+PREG Output pipelining  
+DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_92ns_6ns_98_5_1_U5/pnq_mul_92ns_6ns_98_5_1_Multiplier_4_U/tmp_product__0 output zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_92ns_6ns_98_5_1_U5/pnq_mul_92ns_6ns_98_5_1_Multiplier_4_U/tmp_product__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_12s_80ns_90_5_1_U9/pnq_mul_12s_80ns_90_5_1_Multiplier_8_U/buff0_reg multiplier stage zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_12s_80ns_90_5_1_U9/pnq_mul_12s_80ns_90_5_1_Multiplier_8_U/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#2 Warning
+MREG Output pipelining  
+DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_13s_71s_71_5_1_U11/pnq_mul_13s_71s_71_5_1_Multiplier_10_U/buff0_reg multiplier stage zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_13s_71s_71_5_1_U11/pnq_mul_13s_71s_71_5_1_Multiplier_10_U/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#3 Warning
+MREG Output pipelining  
+DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/pnq_mul_40ns_40ns_80_2_1_Multiplier_9_U/p_reg multiplier stage zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/pnq_mul_40ns_40ns_80_2_1_Multiplier_9_U/p_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#4 Warning
+MREG Output pipelining  
+DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/pnq_mul_40ns_40ns_80_2_1_Multiplier_9_U/p_reg__0 multiplier stage zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/pnq_mul_40ns_40ns_80_2_1_Multiplier_9_U/p_reg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#5 Warning
+MREG Output pipelining  
+DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/pnq_mul_40ns_40ns_80_2_1_Multiplier_9_U/p_reg__1 multiplier stage zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/pnq_mul_40ns_40ns_80_2_1_Multiplier_9_U/p_reg__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#6 Warning
+MREG Output pipelining  
+DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/pnq_mul_40ns_40ns_80_2_1_Multiplier_9_U/tmp_product multiplier stage zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/pnq_mul_40ns_40ns_80_2_1_Multiplier_9_U/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#7 Warning
+MREG Output pipelining  
+DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/pnq_mul_40ns_40ns_80_2_1_Multiplier_9_U/tmp_product__0 multiplier stage zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/pnq_mul_40ns_40ns_80_2_1_Multiplier_9_U/tmp_product__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#8 Warning
+MREG Output pipelining  
+DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_43ns_36ns_79_3_1_U12/pnq_mul_43ns_36ns_79_3_1_Multiplier_11_U/buff0_reg multiplier stage zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_43ns_36ns_79_3_1_U12/pnq_mul_43ns_36ns_79_3_1_Multiplier_11_U/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#9 Warning
+MREG Output pipelining  
+DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_43ns_36ns_79_3_1_U12/pnq_mul_43ns_36ns_79_3_1_Multiplier_11_U/buff0_reg__0 multiplier stage zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_43ns_36ns_79_3_1_U12/pnq_mul_43ns_36ns_79_3_1_Multiplier_11_U/buff0_reg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#10 Warning
+MREG Output pipelining  
+DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_43ns_36ns_79_3_1_U12/pnq_mul_43ns_36ns_79_3_1_Multiplier_11_U/buff0_reg__1 multiplier stage zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_43ns_36ns_79_3_1_U12/pnq_mul_43ns_36ns_79_3_1_Multiplier_11_U/buff0_reg__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#11 Warning
+MREG Output pipelining  
+DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_43ns_36ns_79_3_1_U12/pnq_mul_43ns_36ns_79_3_1_Multiplier_11_U/tmp_product multiplier stage zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_43ns_36ns_79_3_1_U12/pnq_mul_43ns_36ns_79_3_1_Multiplier_11_U/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#12 Warning
+MREG Output pipelining  
+DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_43ns_36ns_79_3_1_U12/pnq_mul_43ns_36ns_79_3_1_Multiplier_11_U/tmp_product__0 multiplier stage zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_43ns_36ns_79_3_1_U12/pnq_mul_43ns_36ns_79_3_1_Multiplier_11_U/tmp_product__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#13 Warning
+MREG Output pipelining  
+DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_43ns_36ns_79_3_1_U12/pnq_mul_43ns_36ns_79_3_1_Multiplier_11_U/tmp_product__1 multiplier stage zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_43ns_36ns_79_3_1_U12/pnq_mul_43ns_36ns_79_3_1_Multiplier_11_U/tmp_product__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#14 Warning
+MREG Output pipelining  
+DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_54s_6ns_54_5_1_U1/pnq_mul_54s_6ns_54_5_1_Multiplier_0_U/buff0_reg multiplier stage zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_54s_6ns_54_5_1_U1/pnq_mul_54s_6ns_54_5_1_Multiplier_0_U/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#15 Warning
+MREG Output pipelining  
+DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_71ns_4ns_75_5_1_U2/pnq_mul_71ns_4ns_75_5_1_Multiplier_1_U/buff0_reg multiplier stage zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_71ns_4ns_75_5_1_U2/pnq_mul_71ns_4ns_75_5_1_Multiplier_1_U/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#16 Warning
+MREG Output pipelining  
+DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_73ns_6ns_79_5_1_U3/pnq_mul_73ns_6ns_79_5_1_Multiplier_2_U/buff0_reg multiplier stage zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_73ns_6ns_79_5_1_U3/pnq_mul_73ns_6ns_79_5_1_Multiplier_2_U/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#17 Warning
+MREG Output pipelining  
+DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_77ns_6ns_83_5_1_U8/pnq_mul_77ns_6ns_83_5_1_Multiplier_7_U/buff0_reg multiplier stage zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_77ns_6ns_83_5_1_U8/pnq_mul_77ns_6ns_83_5_1_Multiplier_7_U/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#18 Warning
+MREG Output pipelining  
+DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_82ns_6ns_88_5_1_U7/pnq_mul_82ns_6ns_88_5_1_Multiplier_6_U/buff0_reg multiplier stage zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_82ns_6ns_88_5_1_U7/pnq_mul_82ns_6ns_88_5_1_Multiplier_6_U/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#19 Warning
+MREG Output pipelining  
+DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_83ns_6ns_89_5_1_U4/pnq_mul_83ns_6ns_89_5_1_Multiplier_3_U/buff0_reg multiplier stage zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_83ns_6ns_89_5_1_U4/pnq_mul_83ns_6ns_89_5_1_Multiplier_3_U/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#20 Warning
+MREG Output pipelining  
+DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_87ns_6ns_93_5_1_U6/pnq_mul_87ns_6ns_93_5_1_Multiplier_5_U/buff0_reg multiplier stage zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_87ns_6ns_93_5_1_U6/pnq_mul_87ns_6ns_93_5_1_Multiplier_5_U/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#21 Warning
+MREG Output pipelining  
+DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_92ns_6ns_98_5_1_U5/pnq_mul_92ns_6ns_98_5_1_Multiplier_4_U/buff0_reg multiplier stage zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_92ns_6ns_98_5_1_U5/pnq_mul_92ns_6ns_98_5_1_Multiplier_4_U/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPREG-4#1 Warning
+DSP48E1_PregDynOpmodeZmuxP:  
+The DSP48E1 cell zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/i_no_versal_es1_workaround.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP with the given dynamic OPMODE[6:0] connections may lead to an unregistered asynchronous feedback path without the PREG attribute enabled. Please refer to the user guide and if one of the internal P feedback opmodes is possible for this design the PREG attribute must be set to 1, currently set to 0
+Related violations: <none>
+
+AVAL-4#1 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/i_no_versal_es1_workaround.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#2 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/i_no_versal_es1_workaround.DSP48E1_GEN.DSP48E1_DEL/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#3 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#1 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/i_no_versal_es1_workaround.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#2 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/i_no_versal_es1_workaround.DSP48E1_GEN.DSP48E1_DEL/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#3 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+
