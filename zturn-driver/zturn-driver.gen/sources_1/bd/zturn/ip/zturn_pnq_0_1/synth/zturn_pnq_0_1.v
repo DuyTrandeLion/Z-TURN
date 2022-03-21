@@ -48,7 +48,7 @@
 
 
 // IP VLNV: SnowLion:hls:pnq:1.0
-// IP Revision: 2112412758
+// IP Revision: 2112426070
 
 (* X_CORE_INFO = "pnq,Vivado 2020.2.2" *)
 (* CHECK_LICENSE_TYPE = "zturn_pnq_0_1,pnq,{}" *)

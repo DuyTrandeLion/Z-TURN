@@ -1,7 +1,7 @@
 -- Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.2.2 (lin64) Build 3118627 Tue Feb  9 05:13:49 MST 2021
--- Date        : Tue Mar  8 01:27:23 2022
+-- Date        : Fri Mar 11 17:39:13 2022
 -- Host        : SnowLion7520 running 64-bit Ubuntu 18.04.6 LTS
 -- Command     : write_vhdl -force -mode funcsim
 --               /home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ip/zturn_axi_intc_0_0/zturn_axi_intc_0_0_sim_netlist.vhdl
@@ -1101,6 +1101,8 @@ architecture STRUCTURE of zturn_axi_intc_0_0_intc_core is
   attribute async_reg of \intr_ff__0\ : signal is "true";
   signal \intr_ff__1\ : STD_LOGIC_VECTOR ( 0 to 1 );
   attribute async_reg of \intr_ff__1\ : signal is "true";
+  signal \intr_ff__2\ : STD_LOGIC_VECTOR ( 0 to 1 );
+  attribute async_reg of \intr_ff__2\ : signal is "true";
   signal \^irq\ : STD_LOGIC;
   signal irq_gen : STD_LOGIC;
   signal irq_gen_i : STD_LOGIC;
@@ -1119,11 +1121,13 @@ architecture STRUCTURE of zturn_axi_intc_0_0_intc_core is
   signal p_1_in10_in : STD_LOGIC;
   signal p_1_in6_in : STD_LOGIC;
   signal p_1_in8_in : STD_LOGIC;
-  attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \INTR_DETECT_GEN[0].LVL_DETECT_GEN.hw_intr[0]_i_1\ : label is "soft_lutpair25";
   attribute ASYNC_REG_boolean : boolean;
-  attribute ASYNC_REG_boolean of \INTR_DETECT_GEN[1].ASYNC_GEN.intr_ff_reg[0]\ : label is std.standard.true;
+  attribute ASYNC_REG_boolean of \INTR_DETECT_GEN[0].ASYNC_GEN.intr_ff_reg[0]\ : label is std.standard.true;
   attribute KEEP : string;
+  attribute KEEP of \INTR_DETECT_GEN[0].ASYNC_GEN.intr_ff_reg[0]\ : label is "yes";
+  attribute ASYNC_REG_boolean of \INTR_DETECT_GEN[0].ASYNC_GEN.intr_ff_reg[1]\ : label is std.standard.true;
+  attribute KEEP of \INTR_DETECT_GEN[0].ASYNC_GEN.intr_ff_reg[1]\ : label is "yes";
+  attribute ASYNC_REG_boolean of \INTR_DETECT_GEN[1].ASYNC_GEN.intr_ff_reg[0]\ : label is std.standard.true;
   attribute KEEP of \INTR_DETECT_GEN[1].ASYNC_GEN.intr_ff_reg[0]\ : label is "yes";
   attribute ASYNC_REG_boolean of \INTR_DETECT_GEN[1].ASYNC_GEN.intr_ff_reg[1]\ : label is std.standard.true;
   attribute KEEP of \INTR_DETECT_GEN[1].ASYNC_GEN.intr_ff_reg[1]\ : label is "yes";
@@ -1135,15 +1139,17 @@ architecture STRUCTURE of zturn_axi_intc_0_0_intc_core is
   attribute KEEP of \INTR_DETECT_GEN[3].ASYNC_GEN.intr_ff_reg[0]\ : label is "yes";
   attribute ASYNC_REG_boolean of \INTR_DETECT_GEN[3].ASYNC_GEN.intr_ff_reg[1]\ : label is std.standard.true;
   attribute KEEP of \INTR_DETECT_GEN[3].ASYNC_GEN.intr_ff_reg[1]\ : label is "yes";
+  attribute SOFT_HLUTNM : string;
   attribute SOFT_HLUTNM of \IPR_GEN.ipr[0]_i_1\ : label is "soft_lutpair22";
   attribute SOFT_HLUTNM of \IPR_GEN.ipr[1]_i_1\ : label is "soft_lutpair23";
   attribute SOFT_HLUTNM of \IPR_GEN.ipr[2]_i_1\ : label is "soft_lutpair21";
   attribute SOFT_HLUTNM of \IPR_GEN.ipr[3]_i_1\ : label is "soft_lutpair20";
   attribute SOFT_HLUTNM of \IRQ_LEVEL_GEN.IRQ_LEVEL_NORMAL_ON_AXI_CLK_GEN.Irq_i_1\ : label is "soft_lutpair24";
-  attribute SOFT_HLUTNM of \REG_GEN[0].isr[0]_i_3\ : label is "soft_lutpair25";
+  attribute SOFT_HLUTNM of \IVR_GEN.ivr[1]_i_1\ : label is "soft_lutpair26";
+  attribute SOFT_HLUTNM of \REG_GEN[0].isr[0]_i_3\ : label is "soft_lutpair26";
   attribute SOFT_HLUTNM of \REG_GEN[1].isr[1]_i_2\ : label is "soft_lutpair24";
-  attribute SOFT_HLUTNM of \REG_GEN[2].isr[2]_i_2\ : label is "soft_lutpair26";
-  attribute SOFT_HLUTNM of \REG_GEN[3].isr[3]_i_2\ : label is "soft_lutpair26";
+  attribute SOFT_HLUTNM of \REG_GEN[2].isr[2]_i_2\ : label is "soft_lutpair25";
+  attribute SOFT_HLUTNM of \REG_GEN[3].isr[3]_i_2\ : label is "soft_lutpair25";
   attribute SOFT_HLUTNM of irq_gen_i_1 : label is "soft_lutpair21";
   attribute SOFT_HLUTNM of \s_axi_rdata_i[0]_i_3\ : label is "soft_lutpair22";
   attribute SOFT_HLUTNM of \s_axi_rdata_i[1]_i_3\ : label is "soft_lutpair23";
@@ -1198,13 +1204,35 @@ begin
       Q => \^p_0_in5_in\,
       R => '0'
     );
+\INTR_DETECT_GEN[0].ASYNC_GEN.intr_ff_reg[0]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => s_axi_aclk,
+      CE => '1',
+      D => intr(0),
+      Q => intr_ff(0),
+      R => '0'
+    );
+\INTR_DETECT_GEN[0].ASYNC_GEN.intr_ff_reg[1]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => s_axi_aclk,
+      CE => '1',
+      D => intr_ff(0),
+      Q => intr_ff(1),
+      R => '0'
+    );
 \INTR_DETECT_GEN[0].LVL_DETECT_GEN.hw_intr[0]_i_1\: unisim.vcomponents.LUT4
     generic map(
       INIT => X"00E0"
     )
         port map (
       I0 => hw_intr(0),
-      I1 => intr(0),
+      I1 => intr_ff(1),
       I2 => s_axi_aresetn,
       I3 => \^reg_gen[0].iar_normal_mode_gen.iar_reg[0]_0\,
       O => \INTR_DETECT_GEN[0].LVL_DETECT_GEN.hw_intr[0]_i_1_n_0\
@@ -1225,7 +1253,7 @@ begin
       C => s_axi_aclk,
       CE => '1',
       D => intr(1),
-      Q => intr_ff(0),
+      Q => \intr_ff__0\(0),
       R => '0'
     );
 \INTR_DETECT_GEN[1].ASYNC_GEN.intr_ff_reg[1]\: unisim.vcomponents.FDRE
@@ -1235,8 +1263,8 @@ begin
         port map (
       C => s_axi_aclk,
       CE => '1',
-      D => intr_ff(0),
-      Q => intr_ff(1),
+      D => \intr_ff__0\(0),
+      Q => \intr_ff__0\(1),
       R => '0'
     );
 \INTR_DETECT_GEN[1].EDGE_DETECT_GEN.hw_intr[1]_i_1\: unisim.vcomponents.LUT5
@@ -1245,7 +1273,7 @@ begin
     )
         port map (
       I0 => hw_intr(1),
-      I1 => intr_ff(1),
+      I1 => \intr_ff__0\(1),
       I2 => intr_d1,
       I3 => s_axi_aresetn,
       I4 => \^p_0_in2_in\,
@@ -1263,7 +1291,7 @@ begin
      port map (
       C => s_axi_aclk,
       CE => '1',
-      D => intr_ff(1),
+      D => \intr_ff__0\(1),
       Q => intr_d1,
       R => \^sr\(0)
     );
@@ -1275,7 +1303,7 @@ begin
       C => s_axi_aclk,
       CE => '1',
       D => intr(2),
-      Q => \intr_ff__0\(0),
+      Q => \intr_ff__1\(0),
       R => '0'
     );
 \INTR_DETECT_GEN[2].ASYNC_GEN.intr_ff_reg[1]\: unisim.vcomponents.FDRE
@@ -1285,8 +1313,8 @@ begin
         port map (
       C => s_axi_aclk,
       CE => '1',
-      D => \intr_ff__0\(0),
-      Q => \intr_ff__0\(1),
+      D => \intr_ff__1\(0),
+      Q => \intr_ff__1\(1),
       R => '0'
     );
 \INTR_DETECT_GEN[2].EDGE_DETECT_GEN.hw_intr[2]_i_1\: unisim.vcomponents.LUT5
@@ -1295,7 +1323,7 @@ begin
     )
         port map (
       I0 => hw_intr(2),
-      I1 => \intr_ff__0\(1),
+      I1 => \intr_ff__1\(1),
       I2 => \INTR_DETECT_GEN[2].EDGE_DETECT_GEN.intr_d1_reg_n_0\,
       I3 => s_axi_aresetn,
       I4 => \^p_0_in1_in\,
@@ -1313,7 +1341,7 @@ begin
      port map (
       C => s_axi_aclk,
       CE => '1',
-      D => \intr_ff__0\(1),
+      D => \intr_ff__1\(1),
       Q => \INTR_DETECT_GEN[2].EDGE_DETECT_GEN.intr_d1_reg_n_0\,
       R => \^sr\(0)
     );
@@ -1325,7 +1353,7 @@ begin
       C => s_axi_aclk,
       CE => '1',
       D => intr(3),
-      Q => \intr_ff__1\(0),
+      Q => \intr_ff__2\(0),
       R => '0'
     );
 \INTR_DETECT_GEN[3].ASYNC_GEN.intr_ff_reg[1]\: unisim.vcomponents.FDRE
@@ -1335,8 +1363,8 @@ begin
         port map (
       C => s_axi_aclk,
       CE => '1',
-      D => \intr_ff__1\(0),
-      Q => \intr_ff__1\(1),
+      D => \intr_ff__2\(0),
+      Q => \intr_ff__2\(1),
       R => '0'
     );
 \INTR_DETECT_GEN[3].EDGE_DETECT_GEN.hw_intr[3]_i_1\: unisim.vcomponents.LUT5
@@ -1345,7 +1373,7 @@ begin
     )
         port map (
       I0 => hw_intr(3),
-      I1 => \intr_ff__1\(1),
+      I1 => \intr_ff__2\(1),
       I2 => \INTR_DETECT_GEN[3].EDGE_DETECT_GEN.intr_d1_reg_n_0\,
       I3 => s_axi_aresetn,
       I4 => \^reg_gen[3].iar_normal_mode_gen.iar_reg[3]_0\,
@@ -1363,7 +1391,7 @@ begin
      port map (
       C => s_axi_aclk,
       CE => '1',
-      D => \intr_ff__1\(1),
+      D => \intr_ff__2\(1),
       Q => \INTR_DETECT_GEN[3].EDGE_DETECT_GEN.intr_d1_reg_n_0\,
       R => \^sr\(0)
     );
@@ -2934,7 +2962,7 @@ entity zturn_axi_intc_0_0_axi_intc is
   attribute C_ADDR_WIDTH : integer;
   attribute C_ADDR_WIDTH of zturn_axi_intc_0_0_axi_intc : entity is 32;
   attribute C_ASYNC_INTR : integer;
-  attribute C_ASYNC_INTR of zturn_axi_intc_0_0_axi_intc : entity is -2;
+  attribute C_ASYNC_INTR of zturn_axi_intc_0_0_axi_intc : entity is -1;
   attribute C_CASCADE_MASTER : integer;
   attribute C_CASCADE_MASTER of zturn_axi_intc_0_0_axi_intc : entity is 0;
   attribute C_DISABLE_SYNCHRONIZERS : integer;
@@ -3326,7 +3354,7 @@ architecture STRUCTURE of zturn_axi_intc_0_0 is
   attribute C_ADDR_WIDTH : integer;
   attribute C_ADDR_WIDTH of U0 : label is 32;
   attribute C_ASYNC_INTR : integer;
-  attribute C_ASYNC_INTR of U0 : label is -2;
+  attribute C_ASYNC_INTR of U0 : label is -1;
   attribute C_CASCADE_MASTER : integer;
   attribute C_CASCADE_MASTER of U0 : label is 0;
   attribute C_DISABLE_SYNCHRONIZERS : integer;

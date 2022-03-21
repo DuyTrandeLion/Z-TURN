@@ -48,7 +48,7 @@
 
 
 // IP VLNV: SnowLion:hls:pnq:1.0
-// IP Revision: 2112412758
+// IP Revision: 2112426070
 
 `timescale 1ns/1ps
 

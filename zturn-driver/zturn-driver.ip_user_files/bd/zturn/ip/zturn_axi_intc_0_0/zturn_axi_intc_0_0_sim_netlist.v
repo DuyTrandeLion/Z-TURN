@@ -1,7 +1,7 @@
 // Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2.2 (lin64) Build 3118627 Tue Feb  9 05:13:49 MST 2021
-// Date        : Tue Mar  8 01:27:23 2022
+// Date        : Fri Mar 11 17:39:13 2022
 // Host        : SnowLion7520 running 64-bit Ubuntu 18.04.6 LTS
 // Command     : write_verilog -force -mode funcsim
 //               /home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ip/zturn_axi_intc_0_0/zturn_axi_intc_0_0_sim_netlist.v
@@ -92,7 +92,7 @@ module zturn_axi_intc_0_0
   GND GND
        (.G(\<const0> ));
   (* C_ADDR_WIDTH = "32" *) 
-  (* C_ASYNC_INTR = "-2" *) 
+  (* C_ASYNC_INTR = "-1" *) 
   (* C_CASCADE_MASTER = "0" *) 
   (* C_DISABLE_SYNCHRONIZERS = "0" *) 
   (* C_ENABLE_ASYNC = "0" *) 
@@ -1032,7 +1032,7 @@ module zturn_axi_intc_0_0_address_decoder
         .O(is_write_reg));
 endmodule
 
-(* C_ADDR_WIDTH = "32" *) (* C_ASYNC_INTR = "-2" *) (* C_CASCADE_MASTER = "0" *) 
+(* C_ADDR_WIDTH = "32" *) (* C_ASYNC_INTR = "-1" *) (* C_CASCADE_MASTER = "0" *) 
 (* C_DISABLE_SYNCHRONIZERS = "0" *) (* C_ENABLE_ASYNC = "0" *) (* C_EN_CASCADE_MODE = "0" *) 
 (* C_FAMILY = "zynq" *) (* C_HAS_CIE = "1" *) (* C_HAS_FAST = "0" *) 
 (* C_HAS_ILR = "0" *) (* C_HAS_IPR = "1" *) (* C_HAS_IVR = "1" *) 
@@ -1794,6 +1794,7 @@ module zturn_axi_intc_0_0_intc_core
   (* async_reg = "true" *) wire [0:1]intr_ff;
   (* async_reg = "true" *) wire [0:1]intr_ff__0;
   (* async_reg = "true" *) wire [0:1]intr_ff__1;
+  (* async_reg = "true" *) wire [0:1]intr_ff__2;
   wire irq;
   wire irq_gen;
   wire irq_gen_i;
@@ -1843,12 +1844,31 @@ module zturn_axi_intc_0_0_intc_core
         .D(\CIE_GEN.CIE_BIT_GEN[3].cie_reg[3]_0 ),
         .Q(p_0_in5_in),
         .R(1'b0));
-  (* SOFT_HLUTNM = "soft_lutpair25" *) 
+  (* ASYNC_REG *) 
+  (* KEEP = "yes" *) 
+  FDRE #(
+    .INIT(1'b0)) 
+    \INTR_DETECT_GEN[0].ASYNC_GEN.intr_ff_reg[0] 
+       (.C(s_axi_aclk),
+        .CE(1'b1),
+        .D(intr[0]),
+        .Q(intr_ff[0]),
+        .R(1'b0));
+  (* ASYNC_REG *) 
+  (* KEEP = "yes" *) 
+  FDRE #(
+    .INIT(1'b0)) 
+    \INTR_DETECT_GEN[0].ASYNC_GEN.intr_ff_reg[1] 
+       (.C(s_axi_aclk),
+        .CE(1'b1),
+        .D(intr_ff[0]),
+        .Q(intr_ff[1]),
+        .R(1'b0));
   LUT4 #(
     .INIT(16'h00E0)) 
     \INTR_DETECT_GEN[0].LVL_DETECT_GEN.hw_intr[0]_i_1 
        (.I0(hw_intr[0]),
-        .I1(intr[0]),
+        .I1(intr_ff[1]),
         .I2(s_axi_aresetn),
         .I3(\REG_GEN[0].IAR_NORMAL_MODE_GEN.iar_reg[0]_0 ),
         .O(\INTR_DETECT_GEN[0].LVL_DETECT_GEN.hw_intr[0]_i_1_n_0 ));
@@ -1866,7 +1886,7 @@ module zturn_axi_intc_0_0_intc_core
        (.C(s_axi_aclk),
         .CE(1'b1),
         .D(intr[1]),
-        .Q(intr_ff[0]),
+        .Q(intr_ff__0[0]),
         .R(1'b0));
   (* ASYNC_REG *) 
   (* KEEP = "yes" *) 
@@ -1875,14 +1895,14 @@ module zturn_axi_intc_0_0_intc_core
     \INTR_DETECT_GEN[1].ASYNC_GEN.intr_ff_reg[1] 
        (.C(s_axi_aclk),
         .CE(1'b1),
-        .D(intr_ff[0]),
-        .Q(intr_ff[1]),
+        .D(intr_ff__0[0]),
+        .Q(intr_ff__0[1]),
         .R(1'b0));
   LUT5 #(
     .INIT(32'h0000AE00)) 
     \INTR_DETECT_GEN[1].EDGE_DETECT_GEN.hw_intr[1]_i_1 
        (.I0(hw_intr[1]),
-        .I1(intr_ff[1]),
+        .I1(intr_ff__0[1]),
         .I2(intr_d1),
         .I3(s_axi_aresetn),
         .I4(p_0_in2_in),
@@ -1896,7 +1916,7 @@ module zturn_axi_intc_0_0_intc_core
   FDRE \INTR_DETECT_GEN[1].EDGE_DETECT_GEN.intr_d1_reg 
        (.C(s_axi_aclk),
         .CE(1'b1),
-        .D(intr_ff[1]),
+        .D(intr_ff__0[1]),
         .Q(intr_d1),
         .R(SR));
   (* ASYNC_REG *) 
@@ -1907,7 +1927,7 @@ module zturn_axi_intc_0_0_intc_core
        (.C(s_axi_aclk),
         .CE(1'b1),
         .D(intr[2]),
-        .Q(intr_ff__0[0]),
+        .Q(intr_ff__1[0]),
         .R(1'b0));
   (* ASYNC_REG *) 
   (* KEEP = "yes" *) 
@@ -1916,14 +1936,14 @@ module zturn_axi_intc_0_0_intc_core
     \INTR_DETECT_GEN[2].ASYNC_GEN.intr_ff_reg[1] 
        (.C(s_axi_aclk),
         .CE(1'b1),
-        .D(intr_ff__0[0]),
-        .Q(intr_ff__0[1]),
+        .D(intr_ff__1[0]),
+        .Q(intr_ff__1[1]),
         .R(1'b0));
   LUT5 #(
     .INIT(32'h0000AE00)) 
     \INTR_DETECT_GEN[2].EDGE_DETECT_GEN.hw_intr[2]_i_1 
        (.I0(hw_intr[2]),
-        .I1(intr_ff__0[1]),
+        .I1(intr_ff__1[1]),
         .I2(\INTR_DETECT_GEN[2].EDGE_DETECT_GEN.intr_d1_reg_n_0 ),
         .I3(s_axi_aresetn),
         .I4(p_0_in1_in),
@@ -1937,7 +1957,7 @@ module zturn_axi_intc_0_0_intc_core
   FDRE \INTR_DETECT_GEN[2].EDGE_DETECT_GEN.intr_d1_reg 
        (.C(s_axi_aclk),
         .CE(1'b1),
-        .D(intr_ff__0[1]),
+        .D(intr_ff__1[1]),
         .Q(\INTR_DETECT_GEN[2].EDGE_DETECT_GEN.intr_d1_reg_n_0 ),
         .R(SR));
   (* ASYNC_REG *) 
@@ -1948,7 +1968,7 @@ module zturn_axi_intc_0_0_intc_core
        (.C(s_axi_aclk),
         .CE(1'b1),
         .D(intr[3]),
-        .Q(intr_ff__1[0]),
+        .Q(intr_ff__2[0]),
         .R(1'b0));
   (* ASYNC_REG *) 
   (* KEEP = "yes" *) 
@@ -1957,14 +1977,14 @@ module zturn_axi_intc_0_0_intc_core
     \INTR_DETECT_GEN[3].ASYNC_GEN.intr_ff_reg[1] 
        (.C(s_axi_aclk),
         .CE(1'b1),
-        .D(intr_ff__1[0]),
-        .Q(intr_ff__1[1]),
+        .D(intr_ff__2[0]),
+        .Q(intr_ff__2[1]),
         .R(1'b0));
   LUT5 #(
     .INIT(32'h0000AE00)) 
     \INTR_DETECT_GEN[3].EDGE_DETECT_GEN.hw_intr[3]_i_1 
        (.I0(hw_intr[3]),
-        .I1(intr_ff__1[1]),
+        .I1(intr_ff__2[1]),
         .I2(\INTR_DETECT_GEN[3].EDGE_DETECT_GEN.intr_d1_reg_n_0 ),
         .I3(s_axi_aresetn),
         .I4(\REG_GEN[3].IAR_NORMAL_MODE_GEN.iar_reg[3]_0 ),
@@ -1978,7 +1998,7 @@ module zturn_axi_intc_0_0_intc_core
   FDRE \INTR_DETECT_GEN[3].EDGE_DETECT_GEN.intr_d1_reg 
        (.C(s_axi_aclk),
         .CE(1'b1),
-        .D(intr_ff__1[1]),
+        .D(intr_ff__2[1]),
         .Q(\INTR_DETECT_GEN[3].EDGE_DETECT_GEN.intr_d1_reg_n_0 ),
         .R(SR));
   (* SOFT_HLUTNM = "soft_lutpair22" *) 
@@ -2058,6 +2078,7 @@ module zturn_axi_intc_0_0_intc_core
         .I4(\REG_GEN[0].ier_reg_n_0_[0] ),
         .I5(irq_gen_i_2_n_0),
         .O(\IVR_GEN.ivr[0]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair26" *) 
   LUT2 #(
     .INIT(4'h7)) 
     \IVR_GEN.ivr[1]_i_1 
@@ -2123,7 +2144,7 @@ module zturn_axi_intc_0_0_intc_core
         .I4(hw_intr[0]),
         .I5(\REG_GEN[0].IAR_NORMAL_MODE_GEN.iar_reg0 ),
         .O(\REG_GEN[0].isr[0]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair25" *) 
+  (* SOFT_HLUTNM = "soft_lutpair26" *) 
   LUT2 #(
     .INIT(4'hB)) 
     \REG_GEN[0].isr[0]_i_3 
@@ -2213,7 +2234,7 @@ module zturn_axi_intc_0_0_intc_core
         .I4(hw_intr[2]),
         .I5(\REG_GEN[2].IAR_NORMAL_MODE_GEN.iar_reg0 ),
         .O(\REG_GEN[2].isr[2]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair26" *) 
+  (* SOFT_HLUTNM = "soft_lutpair25" *) 
   LUT2 #(
     .INIT(4'hB)) 
     \REG_GEN[2].isr[2]_i_2 
@@ -2258,7 +2279,7 @@ module zturn_axi_intc_0_0_intc_core
         .I4(hw_intr[3]),
         .I5(\REG_GEN[3].IAR_NORMAL_MODE_GEN.iar_reg0 ),
         .O(\REG_GEN[3].isr[3]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair26" *) 
+  (* SOFT_HLUTNM = "soft_lutpair25" *) 
   LUT2 #(
     .INIT(4'hB)) 
     \REG_GEN[3].isr[3]_i_2 

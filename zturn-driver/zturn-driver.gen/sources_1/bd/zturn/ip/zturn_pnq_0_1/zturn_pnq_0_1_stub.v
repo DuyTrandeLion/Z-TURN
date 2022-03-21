@@ -1,10 +1,10 @@
 // Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2.2 (lin64) Build 3118627 Tue Feb  9 05:13:49 MST 2021
-// Date        : Fri Mar 11 17:40:24 2022
+// Date        : Fri Mar 11 17:40:21 2022
 // Host        : SnowLion7520 running 64-bit Ubuntu 18.04.6 LTS
-// Command     : write_verilog -force -mode synth_stub
-//               /home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ip/zturn_pnq_0_1/zturn_pnq_0_1_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top zturn_pnq_0_1 -prefix
+//               zturn_pnq_0_1_ zturn_pnq_0_1_stub.v
 // Design      : zturn_pnq_0_1
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg400-1
