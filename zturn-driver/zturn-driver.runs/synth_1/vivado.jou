@@ -2,8 +2,8 @@
 # Vivado v2020.2.2 (64-bit)
 # SW Build 3118627 on Tue Feb  9 05:13:49 MST 2021
 # IP Build 3115676 on Tue Feb  9 10:48:11 MST 2021
-# Start of session at: Sun Mar 20 23:20:15 2022
-# Process ID: 6254
+# Start of session at: Sun Apr  3 18:01:20 2022
+# Process ID: 17239
 # Current directory: /home/duyliontran/xilinx/zturn-driver/zturn-driver.runs/synth_1
 # Command line: vivado -log zturn_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source zturn_wrapper.tcl
 # Log file: /home/duyliontran/xilinx/zturn-driver/zturn-driver.runs/synth_1/zturn_wrapper.vds

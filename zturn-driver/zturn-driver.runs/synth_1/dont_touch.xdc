@@ -30,6 +30,9 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==zturn_xlcon
 # IP: bd/zturn/ip/zturn_pnq_0_1/zturn_pnq_0_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==zturn_pnq_0_1 || ORIG_REF_NAME==zturn_pnq_0_1} -quiet] -quiet
 
+# IP: bd/zturn/ip/zturn_multivariate_0_0/zturn_multivariate_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==zturn_multivariate_0_0 || ORIG_REF_NAME==zturn_multivariate_0_0} -quiet] -quiet
+
 # IP: bd/zturn/ip/zturn_auto_pc_0/zturn_auto_pc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==zturn_auto_pc_0 || ORIG_REF_NAME==zturn_auto_pc_0} -quiet] -quiet
 

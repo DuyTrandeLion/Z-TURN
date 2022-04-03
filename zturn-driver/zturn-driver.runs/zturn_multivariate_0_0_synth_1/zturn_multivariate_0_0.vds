@@ -1,0 +1,740 @@
+#-----------------------------------------------------------
+# Vivado v2020.2.2 (64-bit)
+# SW Build 3118627 on Tue Feb  9 05:13:49 MST 2021
+# IP Build 3115676 on Tue Feb  9 10:48:11 MST 2021
+# Start of session at: Sun Apr  3 17:59:10 2022
+# Process ID: 16654
+# Current directory: /home/duyliontran/xilinx/zturn-driver/zturn-driver.runs/zturn_multivariate_0_0_synth_1
+# Command line: vivado -log zturn_multivariate_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source zturn_multivariate_0_0.tcl
+# Log file: /home/duyliontran/xilinx/zturn-driver/zturn-driver.runs/zturn_multivariate_0_0_synth_1/zturn_multivariate_0_0.vds
+# Journal file: /home/duyliontran/xilinx/zturn-driver/zturn-driver.runs/zturn_multivariate_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source zturn_multivariate_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/duyliontran/xilinx/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top zturn_multivariate_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 16686
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 2431.781 ; gain = 0.000 ; free physical = 20854 ; free virtual = 27244
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'zturn_multivariate_0_0' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ip/zturn_multivariate_0_0/synth/zturn_multivariate_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'multivariate' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate.v:12]
+	Parameter ap_ST_fsm_state1 bound to: 108'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001 
+	Parameter ap_ST_fsm_state2 bound to: 108'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010 
+	Parameter ap_ST_fsm_state3 bound to: 108'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100 
+	Parameter ap_ST_fsm_state4 bound to: 108'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000 
+	Parameter ap_ST_fsm_state5 bound to: 108'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000 
+	Parameter ap_ST_fsm_state6 bound to: 108'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000 
+	Parameter ap_ST_fsm_state7 bound to: 108'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000 
+	Parameter ap_ST_fsm_state8 bound to: 108'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000 
+	Parameter ap_ST_fsm_state9 bound to: 108'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000 
+	Parameter ap_ST_fsm_state10 bound to: 108'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000 
+	Parameter ap_ST_fsm_state11 bound to: 108'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000 
+	Parameter ap_ST_fsm_state12 bound to: 108'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000 
+	Parameter ap_ST_fsm_state13 bound to: 108'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000 
+	Parameter ap_ST_fsm_state14 bound to: 108'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000 
+	Parameter ap_ST_fsm_state15 bound to: 108'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000 
+	Parameter ap_ST_fsm_state16 bound to: 108'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000 
+	Parameter ap_ST_fsm_state17 bound to: 108'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000 
+	Parameter ap_ST_fsm_state18 bound to: 108'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000 
+	Parameter ap_ST_fsm_state19 bound to: 108'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000 
+	Parameter ap_ST_fsm_state20 bound to: 108'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000 
+	Parameter ap_ST_fsm_state21 bound to: 108'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000 
+	Parameter ap_ST_fsm_state22 bound to: 108'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000 
+	Parameter ap_ST_fsm_state23 bound to: 108'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000 
+	Parameter ap_ST_fsm_state24 bound to: 108'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000 
+	Parameter ap_ST_fsm_state25 bound to: 108'b000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000 
+	Parameter ap_ST_fsm_state26 bound to: 108'b000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000 
+	Parameter ap_ST_fsm_state27 bound to: 108'b000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000 
+	Parameter ap_ST_fsm_state28 bound to: 108'b000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000 
+	Parameter ap_ST_fsm_state29 bound to: 108'b000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000 
+	Parameter ap_ST_fsm_state30 bound to: 108'b000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000 
+	Parameter ap_ST_fsm_state31 bound to: 108'b000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000 
+	Parameter ap_ST_fsm_state32 bound to: 108'b000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000 
+	Parameter ap_ST_fsm_state33 bound to: 108'b000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000 
+	Parameter ap_ST_fsm_state34 bound to: 108'b000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state35 bound to: 108'b000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state36 bound to: 108'b000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state37 bound to: 108'b000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state38 bound to: 108'b000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state39 bound to: 108'b000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state40 bound to: 108'b000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state41 bound to: 108'b000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state42 bound to: 108'b000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state43 bound to: 108'b000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state44 bound to: 108'b000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state45 bound to: 108'b000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state46 bound to: 108'b000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state47 bound to: 108'b000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state48 bound to: 108'b000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state49 bound to: 108'b000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state50 bound to: 108'b000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state51 bound to: 108'b000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state52 bound to: 108'b000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state53 bound to: 108'b000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state54 bound to: 108'b000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state55 bound to: 108'b000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state56 bound to: 108'b000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state57 bound to: 108'b000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state58 bound to: 108'b000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state59 bound to: 108'b000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state60 bound to: 108'b000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state61 bound to: 108'b000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state62 bound to: 108'b000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state63 bound to: 108'b000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state64 bound to: 108'b000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state65 bound to: 108'b000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state66 bound to: 108'b000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state67 bound to: 108'b000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state68 bound to: 108'b000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state69 bound to: 108'b000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state70 bound to: 108'b000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state71 bound to: 108'b000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state72 bound to: 108'b000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state73 bound to: 108'b000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state74 bound to: 108'b000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state75 bound to: 108'b000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state76 bound to: 108'b000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state77 bound to: 108'b000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state78 bound to: 108'b000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state79 bound to: 108'b000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state80 bound to: 108'b000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state81 bound to: 108'b000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state82 bound to: 108'b000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state83 bound to: 108'b000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state84 bound to: 108'b000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state85 bound to: 108'b000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state86 bound to: 108'b000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state87 bound to: 108'b000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state88 bound to: 108'b000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state89 bound to: 108'b000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state90 bound to: 108'b000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state91 bound to: 108'b000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state92 bound to: 108'b000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state93 bound to: 108'b000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state94 bound to: 108'b000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state95 bound to: 108'b000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state96 bound to: 108'b000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state97 bound to: 108'b000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state98 bound to: 108'b000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state99 bound to: 108'b000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state100 bound to: 108'b000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state101 bound to: 108'b000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state102 bound to: 108'b000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state103 bound to: 108'b000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state104 bound to: 108'b000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state105 bound to: 108'b000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state106 bound to: 108'b001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state107 bound to: 108'b010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state108 bound to: 108'b100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_S_AXI_CONTROL_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CONTROL_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CONTROL_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'multivariate_control_s_axi' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_control_s_axi.v:6]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_AP_CTRL bound to: 6'b000000 
+	Parameter ADDR_GIE bound to: 6'b000100 
+	Parameter ADDR_IER bound to: 6'b001000 
+	Parameter ADDR_ISR bound to: 6'b001100 
+	Parameter ADDR_A_DATA_0 bound to: 6'b010000 
+	Parameter ADDR_A_CTRL bound to: 6'b010100 
+	Parameter ADDR_B_DATA_0 bound to: 6'b011000 
+	Parameter ADDR_B_CTRL bound to: 6'b011100 
+	Parameter ADDR_C_DATA_0 bound to: 6'b100000 
+	Parameter ADDR_C_CTRL bound to: 6'b100100 
+	Parameter WRIDLE bound to: 2'b00 
+	Parameter WRDATA bound to: 2'b01 
+	Parameter WRRESP bound to: 2'b10 
+	Parameter WRRESET bound to: 2'b11 
+	Parameter RDIDLE bound to: 2'b00 
+	Parameter RDDATA bound to: 2'b01 
+	Parameter RDRESET bound to: 2'b10 
+	Parameter ADDR_BITS bound to: 6 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_control_s_axi.v:212]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_control_s_axi' (1#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_control_s_axi.v:6]
+INFO: [Synth 8-6157] synthesizing module 'multivariate_pow_generic_double_s' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s.v:10]
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 1'b1 
+INFO: [Synth 8-6157] synthesizing module 'multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_inverse_lut_table_powbkb' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_inverse_lut_table_powbkb.v:39]
+	Parameter DataWidth bound to: 6 - type: integer 
+	Parameter AddressRange bound to: 64 - type: integer 
+	Parameter AddressWidth bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_inverse_lut_table_powbkb_rom' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_inverse_lut_table_powbkb.v:6]
+	Parameter DWIDTH bound to: 6 - type: integer 
+	Parameter AWIDTH bound to: 6 - type: integer 
+	Parameter MEM_SIZE bound to: 64 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_inverse_lut_table_powbkb_rom.dat' is read successfully [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_inverse_lut_table_powbkb.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_inverse_lut_table_powbkb_rom' (2#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_inverse_lut_table_powbkb.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_inverse_lut_table_powbkb' (3#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_inverse_lut_table_powbkb.v:39]
+INFO: [Synth 8-6157] synthesizing module 'multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log0_lut_table_ap_fixed_1cud' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log0_lut_table_ap_fixed_1cud.v:39]
+	Parameter DataWidth bound to: 109 - type: integer 
+	Parameter AddressRange bound to: 64 - type: integer 
+	Parameter AddressWidth bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log0_lut_table_ap_fixed_1cud_rom' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log0_lut_table_ap_fixed_1cud.v:6]
+	Parameter DWIDTH bound to: 109 - type: integer 
+	Parameter AWIDTH bound to: 6 - type: integer 
+	Parameter MEM_SIZE bound to: 64 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log0_lut_table_ap_fixed_1cud_rom.dat' is read successfully [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log0_lut_table_ap_fixed_1cud.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log0_lut_table_ap_fixed_1cud_rom' (4#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log0_lut_table_ap_fixed_1cud.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log0_lut_table_ap_fixed_1cud' (5#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log0_lut_table_ap_fixed_1cud.v:39]
+INFO: [Synth 8-6157] synthesizing module 'multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12dEe' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12dEe.v:39]
+	Parameter DataWidth bound to: 105 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12dEe_rom' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12dEe.v:6]
+	Parameter DWIDTH bound to: 105 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12dEe_rom.dat' is read successfully [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12dEe.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12dEe_rom' (6#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12dEe.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12dEe' (7#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12dEe.v:39]
+INFO: [Synth 8-6157] synthesizing module 'multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12eOg' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12eOg.v:39]
+	Parameter DataWidth bound to: 102 - type: integer 
+	Parameter AddressRange bound to: 64 - type: integer 
+	Parameter AddressWidth bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12eOg_rom' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12eOg.v:6]
+	Parameter DWIDTH bound to: 102 - type: integer 
+	Parameter AWIDTH bound to: 6 - type: integer 
+	Parameter MEM_SIZE bound to: 64 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12eOg_rom.dat' is read successfully [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12eOg.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12eOg_rom' (8#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12eOg.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12eOg' (9#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12eOg.v:39]
+INFO: [Synth 8-6157] synthesizing module 'multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12fYi' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12fYi.v:39]
+	Parameter DataWidth bound to: 97 - type: integer 
+	Parameter AddressRange bound to: 64 - type: integer 
+	Parameter AddressWidth bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12fYi_rom' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12fYi.v:6]
+	Parameter DWIDTH bound to: 97 - type: integer 
+	Parameter AWIDTH bound to: 6 - type: integer 
+	Parameter MEM_SIZE bound to: 64 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12fYi_rom.dat' is read successfully [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12fYi.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12fYi_rom' (10#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12fYi.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12fYi' (11#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12fYi.v:39]
+INFO: [Synth 8-6157] synthesizing module 'multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12g8j' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12g8j.v:39]
+	Parameter DataWidth bound to: 92 - type: integer 
+	Parameter AddressRange bound to: 64 - type: integer 
+	Parameter AddressWidth bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12g8j_rom' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12g8j.v:6]
+	Parameter DWIDTH bound to: 92 - type: integer 
+	Parameter AWIDTH bound to: 6 - type: integer 
+	Parameter MEM_SIZE bound to: 64 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12g8j_rom.dat' is read successfully [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12g8j.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12g8j_rom' (12#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12g8j.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12g8j' (13#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12g8j.v:39]
+INFO: [Synth 8-6157] synthesizing module 'multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12hbi' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12hbi.v:39]
+	Parameter DataWidth bound to: 87 - type: integer 
+	Parameter AddressRange bound to: 64 - type: integer 
+	Parameter AddressWidth bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12hbi_rom' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12hbi.v:6]
+	Parameter DWIDTH bound to: 87 - type: integer 
+	Parameter AWIDTH bound to: 6 - type: integer 
+	Parameter MEM_SIZE bound to: 64 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12hbi_rom.dat' is read successfully [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12hbi.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12hbi_rom' (14#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12hbi.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12hbi' (15#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12hbi.v:39]
+INFO: [Synth 8-6157] synthesizing module 'multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12ibs' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12ibs.v:39]
+	Parameter DataWidth bound to: 82 - type: integer 
+	Parameter AddressRange bound to: 64 - type: integer 
+	Parameter AddressWidth bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12ibs_rom' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12ibs.v:6]
+	Parameter DWIDTH bound to: 82 - type: integer 
+	Parameter AWIDTH bound to: 6 - type: integer 
+	Parameter MEM_SIZE bound to: 64 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12ibs_rom.dat' is read successfully [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12ibs.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12ibs_rom' (16#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12ibs.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12ibs' (17#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12ibs.v:39]
+INFO: [Synth 8-6157] synthesizing module 'multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12jbC' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12jbC.v:39]
+	Parameter DataWidth bound to: 77 - type: integer 
+	Parameter AddressRange bound to: 64 - type: integer 
+	Parameter AddressWidth bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12jbC_rom' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12jbC.v:6]
+	Parameter DWIDTH bound to: 77 - type: integer 
+	Parameter AWIDTH bound to: 6 - type: integer 
+	Parameter MEM_SIZE bound to: 64 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12jbC_rom.dat' is read successfully [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12jbC.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12jbC_rom' (18#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12jbC.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12jbC' (19#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12jbC.v:39]
+INFO: [Synth 8-6157] synthesizing module 'multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_58kbM' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_58kbM.v:39]
+	Parameter DataWidth bound to: 58 - type: integer 
+	Parameter AddressRange bound to: 256 - type: integer 
+	Parameter AddressWidth bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_58kbM_rom' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_58kbM.v:6]
+	Parameter DWIDTH bound to: 58 - type: integer 
+	Parameter AWIDTH bound to: 8 - type: integer 
+	Parameter MEM_SIZE bound to: 256 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_58kbM_rom.dat' is read successfully [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_58kbM.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_58kbM_rom' (20#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_58kbM.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_58kbM' (21#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_58kbM.v:39]
+INFO: [Synth 8-6157] synthesizing module 'multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_59_0lbW' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_59_0lbW.v:52]
+	Parameter DataWidth bound to: 26 - type: integer 
+	Parameter AddressRange bound to: 256 - type: integer 
+	Parameter AddressWidth bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_59_0lbW_rom' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_59_0lbW.v:6]
+	Parameter DWIDTH bound to: 26 - type: integer 
+	Parameter AWIDTH bound to: 8 - type: integer 
+	Parameter MEM_SIZE bound to: 256 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_59_0lbW_rom.dat' is read successfully [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_59_0lbW.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_59_0lbW_rom' (22#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_59_0lbW.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_59_0lbW' (23#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_59_0lbW.v:52]
+INFO: [Synth 8-6157] synthesizing module 'multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_59_0mb6' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_59_0mb6.v:39]
+	Parameter DataWidth bound to: 42 - type: integer 
+	Parameter AddressRange bound to: 256 - type: integer 
+	Parameter AddressWidth bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_59_0mb6_rom' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_59_0mb6.v:6]
+	Parameter DWIDTH bound to: 42 - type: integer 
+	Parameter AWIDTH bound to: 8 - type: integer 
+	Parameter MEM_SIZE bound to: 256 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_59_0mb6_rom.dat' is read successfully [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_59_0mb6.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_59_0mb6_rom' (24#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_59_0mb6.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_59_0mb6' (25#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_59_0mb6.v:39]
+INFO: [Synth 8-6157] synthesizing module 'multivariate_mul_54s_6ns_54_5_1' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_54s_6ns_54_5_1.v:35]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 54 - type: integer 
+	Parameter din1_WIDTH bound to: 6 - type: integer 
+	Parameter dout_WIDTH bound to: 54 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'multivariate_mul_54s_6ns_54_5_1_Multiplier_0' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_54s_6ns_54_5_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_mul_54s_6ns_54_5_1_Multiplier_0' (26#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_54s_6ns_54_5_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_mul_54s_6ns_54_5_1' (27#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_54s_6ns_54_5_1.v:35]
+INFO: [Synth 8-6157] synthesizing module 'multivariate_mul_71ns_4ns_75_5_1' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_71ns_4ns_75_5_1.v:35]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 71 - type: integer 
+	Parameter din1_WIDTH bound to: 4 - type: integer 
+	Parameter dout_WIDTH bound to: 75 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'multivariate_mul_71ns_4ns_75_5_1_Multiplier_1' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_71ns_4ns_75_5_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_mul_71ns_4ns_75_5_1_Multiplier_1' (28#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_71ns_4ns_75_5_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_mul_71ns_4ns_75_5_1' (29#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_71ns_4ns_75_5_1.v:35]
+INFO: [Synth 8-6157] synthesizing module 'multivariate_mul_73ns_6ns_79_5_1' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_73ns_6ns_79_5_1.v:35]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 73 - type: integer 
+	Parameter din1_WIDTH bound to: 6 - type: integer 
+	Parameter dout_WIDTH bound to: 79 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'multivariate_mul_73ns_6ns_79_5_1_Multiplier_2' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_73ns_6ns_79_5_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_mul_73ns_6ns_79_5_1_Multiplier_2' (30#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_73ns_6ns_79_5_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_mul_73ns_6ns_79_5_1' (31#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_73ns_6ns_79_5_1.v:35]
+INFO: [Synth 8-6157] synthesizing module 'multivariate_mul_83ns_6ns_89_5_1' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_83ns_6ns_89_5_1.v:35]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 83 - type: integer 
+	Parameter din1_WIDTH bound to: 6 - type: integer 
+	Parameter dout_WIDTH bound to: 89 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'multivariate_mul_83ns_6ns_89_5_1_Multiplier_3' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_83ns_6ns_89_5_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_mul_83ns_6ns_89_5_1_Multiplier_3' (32#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_83ns_6ns_89_5_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_mul_83ns_6ns_89_5_1' (33#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_83ns_6ns_89_5_1.v:35]
+INFO: [Synth 8-6157] synthesizing module 'multivariate_mul_92ns_6ns_98_5_1' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_92ns_6ns_98_5_1.v:35]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 92 - type: integer 
+	Parameter din1_WIDTH bound to: 6 - type: integer 
+	Parameter dout_WIDTH bound to: 98 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'multivariate_mul_92ns_6ns_98_5_1_Multiplier_4' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_92ns_6ns_98_5_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_mul_92ns_6ns_98_5_1_Multiplier_4' (34#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_92ns_6ns_98_5_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_mul_92ns_6ns_98_5_1' (35#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_92ns_6ns_98_5_1.v:35]
+INFO: [Synth 8-6157] synthesizing module 'multivariate_mul_87ns_6ns_93_5_1' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_87ns_6ns_93_5_1.v:35]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 87 - type: integer 
+	Parameter din1_WIDTH bound to: 6 - type: integer 
+	Parameter dout_WIDTH bound to: 93 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'multivariate_mul_87ns_6ns_93_5_1_Multiplier_5' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_87ns_6ns_93_5_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_mul_87ns_6ns_93_5_1_Multiplier_5' (36#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_87ns_6ns_93_5_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_mul_87ns_6ns_93_5_1' (37#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_87ns_6ns_93_5_1.v:35]
+INFO: [Synth 8-6157] synthesizing module 'multivariate_mul_82ns_6ns_88_5_1' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_82ns_6ns_88_5_1.v:35]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 82 - type: integer 
+	Parameter din1_WIDTH bound to: 6 - type: integer 
+	Parameter dout_WIDTH bound to: 88 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'multivariate_mul_82ns_6ns_88_5_1_Multiplier_6' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_82ns_6ns_88_5_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_mul_82ns_6ns_88_5_1_Multiplier_6' (38#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_82ns_6ns_88_5_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_mul_82ns_6ns_88_5_1' (39#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_82ns_6ns_88_5_1.v:35]
+INFO: [Synth 8-6157] synthesizing module 'multivariate_mul_77ns_6ns_83_5_1' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_77ns_6ns_83_5_1.v:35]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 77 - type: integer 
+	Parameter din1_WIDTH bound to: 6 - type: integer 
+	Parameter dout_WIDTH bound to: 83 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'multivariate_mul_77ns_6ns_83_5_1_Multiplier_7' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_77ns_6ns_83_5_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_mul_77ns_6ns_83_5_1_Multiplier_7' (40#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_77ns_6ns_83_5_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_mul_77ns_6ns_83_5_1' (41#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_77ns_6ns_83_5_1.v:35]
+INFO: [Synth 8-6157] synthesizing module 'multivariate_mul_12s_80ns_90_5_1' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_12s_80ns_90_5_1.v:35]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 12 - type: integer 
+	Parameter din1_WIDTH bound to: 80 - type: integer 
+	Parameter dout_WIDTH bound to: 90 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'multivariate_mul_12s_80ns_90_5_1_Multiplier_8' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_12s_80ns_90_5_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_mul_12s_80ns_90_5_1_Multiplier_8' (42#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_12s_80ns_90_5_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_mul_12s_80ns_90_5_1' (43#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_12s_80ns_90_5_1.v:35]
+INFO: [Synth 8-6157] synthesizing module 'multivariate_mul_40ns_40ns_80_2_1' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_40ns_40ns_80_2_1.v:25]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 2 - type: integer 
+	Parameter din0_WIDTH bound to: 40 - type: integer 
+	Parameter din1_WIDTH bound to: 40 - type: integer 
+	Parameter dout_WIDTH bound to: 80 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'multivariate_mul_40ns_40ns_80_2_1_Multiplier_9' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_40ns_40ns_80_2_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_mul_40ns_40ns_80_2_1_Multiplier_9' (44#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_40ns_40ns_80_2_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_mul_40ns_40ns_80_2_1' (45#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_40ns_40ns_80_2_1.v:25]
+INFO: [Synth 8-6157] synthesizing module 'multivariate_mul_77s_54ns_130_5_1' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_77s_54ns_130_5_1.v:35]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 77 - type: integer 
+	Parameter din1_WIDTH bound to: 54 - type: integer 
+	Parameter dout_WIDTH bound to: 130 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'multivariate_mul_77s_54ns_130_5_1_Multiplier_10' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_77s_54ns_130_5_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_mul_77s_54ns_130_5_1_Multiplier_10' (46#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_77s_54ns_130_5_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_mul_77s_54ns_130_5_1' (47#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_77s_54ns_130_5_1.v:35]
+INFO: [Synth 8-6157] synthesizing module 'multivariate_mul_77s_55ns_130_5_1' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_77s_55ns_130_5_1.v:35]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 77 - type: integer 
+	Parameter din1_WIDTH bound to: 55 - type: integer 
+	Parameter dout_WIDTH bound to: 130 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'multivariate_mul_77s_55ns_130_5_1_Multiplier_11' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_77s_55ns_130_5_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_mul_77s_55ns_130_5_1_Multiplier_11' (48#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_77s_55ns_130_5_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_mul_77s_55ns_130_5_1' (49#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_77s_55ns_130_5_1.v:35]
+INFO: [Synth 8-6157] synthesizing module 'multivariate_mul_13s_71s_71_5_1' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_13s_71s_71_5_1.v:35]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 13 - type: integer 
+	Parameter din1_WIDTH bound to: 71 - type: integer 
+	Parameter dout_WIDTH bound to: 71 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'multivariate_mul_13s_71s_71_5_1_Multiplier_12' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_13s_71s_71_5_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_mul_13s_71s_71_5_1_Multiplier_12' (50#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_13s_71s_71_5_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_mul_13s_71s_71_5_1' (51#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_13s_71s_71_5_1.v:35]
+INFO: [Synth 8-6157] synthesizing module 'multivariate_mul_43ns_36ns_79_3_1' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_43ns_36ns_79_3_1.v:31]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 3 - type: integer 
+	Parameter din0_WIDTH bound to: 43 - type: integer 
+	Parameter din1_WIDTH bound to: 36 - type: integer 
+	Parameter dout_WIDTH bound to: 79 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'multivariate_mul_43ns_36ns_79_3_1_Multiplier_13' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_43ns_36ns_79_3_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_mul_43ns_36ns_79_3_1_Multiplier_13' (52#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_43ns_36ns_79_3_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_mul_43ns_36ns_79_3_1' (53#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_43ns_36ns_79_3_1.v:31]
+INFO: [Synth 8-6157] synthesizing module 'multivariate_mul_49ns_44ns_93_5_1' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_49ns_44ns_93_5_1.v:35]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 49 - type: integer 
+	Parameter din1_WIDTH bound to: 44 - type: integer 
+	Parameter dout_WIDTH bound to: 93 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'multivariate_mul_49ns_44ns_93_5_1_Multiplier_14' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_49ns_44ns_93_5_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_mul_49ns_44ns_93_5_1_Multiplier_14' (54#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_49ns_44ns_93_5_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_mul_49ns_44ns_93_5_1' (55#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_49ns_44ns_93_5_1.v:35]
+INFO: [Synth 8-6157] synthesizing module 'multivariate_mul_50ns_50ns_100_5_1' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_50ns_50ns_100_5_1.v:35]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 50 - type: integer 
+	Parameter din1_WIDTH bound to: 50 - type: integer 
+	Parameter dout_WIDTH bound to: 100 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'multivariate_mul_50ns_50ns_100_5_1_Multiplier_15' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_50ns_50ns_100_5_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_mul_50ns_50ns_100_5_1_Multiplier_15' (56#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_50ns_50ns_100_5_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_mul_50ns_50ns_100_5_1' (57#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mul_50ns_50ns_100_5_1.v:35]
+INFO: [Synth 8-6157] synthesizing module 'multivariate_mac_muladd_16s_16ns_19s_31_4_1' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mac_muladd_16s_16ns_19s_31_4_1.v:46]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter din2_WIDTH bound to: 19 - type: integer 
+	Parameter dout_WIDTH bound to: 31 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'multivariate_mac_muladd_16s_16ns_19s_31_4_1_DSP48_0' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mac_muladd_16s_16ns_19s_31_4_1.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_mac_muladd_16s_16ns_19s_31_4_1_DSP48_0' (58#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mac_muladd_16s_16ns_19s_31_4_1.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_mac_muladd_16s_16ns_19s_31_4_1' (59#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_mac_muladd_16s_16ns_19s_31_4_1.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_pow_generic_double_s' (60#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_pow_generic_double_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'multivariate_dadd_64ns_64ns_64_7_full_dsp_1' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_dadd_64ns_64ns_64_7_full_dsp_1.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 7 - type: integer 
+	Parameter din0_WIDTH bound to: 64 - type: integer 
+	Parameter din1_WIDTH bound to: 64 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'multivariate_ap_dadd_5_full_dsp_64' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/ip/multivariate_ap_dadd_5_full_dsp_64.v:60]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [/tools/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:59374]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (61#1) [/tools/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:59374]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_ap_dadd_5_full_dsp_64' (89#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/ip/multivariate_ap_dadd_5_full_dsp_64.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_dadd_64ns_64ns_64_7_full_dsp_1' (90#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_dadd_64ns_64ns_64_7_full_dsp_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'multivariate_dmul_64ns_64ns_64_7_max_dsp_1' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_dmul_64ns_64ns_64_7_max_dsp_1.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 7 - type: integer 
+	Parameter din0_WIDTH bound to: 64 - type: integer 
+	Parameter din1_WIDTH bound to: 64 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'multivariate_ap_dmul_5_max_dsp_64' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/ip/multivariate_ap_dmul_5_max_dsp_64.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_ap_dmul_5_max_dsp_64' (97#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/ip/multivariate_ap_dmul_5_max_dsp_64.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_dmul_64ns_64ns_64_7_max_dsp_1' (98#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_dmul_64ns_64ns_64_7_max_dsp_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'multivariate_uitodp_32ns_64_6_no_dsp_1' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_uitodp_32ns_64_6_no_dsp_1.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 6 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'multivariate_ap_uitodp_4_no_dsp_32' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/ip/multivariate_ap_uitodp_4_no_dsp_32.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_ap_uitodp_4_no_dsp_32' (101#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/ip/multivariate_ap_uitodp_4_no_dsp_32.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_uitodp_32ns_64_6_no_dsp_1' (102#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_uitodp_32ns_64_6_no_dsp_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'multivariate_sitodp_32ns_64_6_no_dsp_1' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_sitodp_32ns_64_6_no_dsp_1.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 6 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'multivariate_ap_sitodp_4_no_dsp_32' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/ip/multivariate_ap_sitodp_4_no_dsp_32.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_ap_sitodp_4_no_dsp_32' (103#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/ip/multivariate_ap_sitodp_4_no_dsp_32.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate_sitodp_32ns_64_6_no_dsp_1' (104#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate_sitodp_32ns_64_6_no_dsp_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'multivariate' (105#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/632b/hdl/verilog/multivariate.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'zturn_multivariate_0_0' (106#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ip/zturn_multivariate_0_0/synth/zturn_multivariate_0_0.v:58]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 2527.602 ; gain = 95.820 ; free physical = 20603 ; free virtual = 27005
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 2545.414 ; gain = 113.633 ; free physical = 20603 ; free virtual = 27004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 2545.414 ; gain = 113.633 ; free physical = 20603 ; free virtual = 27004
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.32 ; elapsed = 00:00:00.32 . Memory (MB): peak = 2551.352 ; gain = 0.000 ; free physical = 20766 ; free virtual = 27168
+INFO: [Netlist 29-17] Analyzing 698 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ip/zturn_multivariate_0_0/constraints/multivariate_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ip/zturn_multivariate_0_0/constraints/multivariate_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/duyliontran/xilinx/zturn-driver/zturn-driver.runs/zturn_multivariate_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/duyliontran/xilinx/zturn-driver/zturn-driver.runs/zturn_multivariate_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2712.195 ; gain = 0.000 ; free physical = 20811 ; free virtual = 27210
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 35 instances were transformed.
+  FDE => FDRE: 35 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.64 ; elapsed = 00:00:00.24 . Memory (MB): peak = 2718.133 ; gain = 5.938 ; free physical = 20802 ; free virtual = 27201
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 2718.133 ; gain = 286.352 ; free physical = 21878 ; free virtual = 28276
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 2718.133 ; gain = 286.352 ; free physical = 21878 ; free virtual = 28276
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/duyliontran/xilinx/zturn-driver/zturn-driver.runs/zturn_multivariate_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 2718.133 ; gain = 286.352 ; free physical = 21877 ; free virtual = 28276
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'multivariate_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'multivariate_control_s_axi'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'multivariate_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'multivariate_control_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:36 . Memory (MB): peak = 2718.133 ; gain = 286.352 ; free physical = 21784 ; free virtual = 28191
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/dadd_64ns_64ns_64_7_full_dsp_1_U48/multivariate_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized11) to 'inst/dadd_64ns_64ns_64_7_full_dsp_1_U48/multivariate_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/dadd_64ns_64ns_64_7_full_dsp_1_U48/multivariate_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/EXP_INC_DELAY' (delay__parameterized11) to 'inst/dadd_64ns_64ns_64_7_full_dsp_1_U48/multivariate_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/dadd_64ns_64ns_64_7_full_dsp_1_U48/multivariate_ap_dadd_5_full_dsp_64_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized11) to 'inst/dadd_64ns_64ns_64_7_full_dsp_1_U48/multivariate_ap_dadd_5_full_dsp_64_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/dadd_64ns_64ns_64_7_full_dsp_1_U48/multivariate_ap_dadd_5_full_dsp_64_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized11) to 'inst/dadd_64ns_64ns_64_7_full_dsp_1_U48/multivariate_ap_dadd_5_full_dsp_64_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/dmul_64ns_64ns_64_7_max_dsp_1_U49/multivariate_ap_dmul_5_max_dsp_64_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized11) to 'inst/dmul_64ns_64ns_64_7_max_dsp_1_U49/multivariate_ap_dmul_5_max_dsp_64_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/dmul_64ns_64ns_64_7_max_dsp_1_U49/multivariate_ap_dmul_5_max_dsp_64_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized11) to 'inst/dmul_64ns_64ns_64_7_max_dsp_1_U49/multivariate_ap_dmul_5_max_dsp_64_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/uitodp_32ns_64_6_no_dsp_1_U50/multivariate_ap_uitodp_4_no_dsp_32_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized11) to 'inst/uitodp_32ns_64_6_no_dsp_1_U50/multivariate_ap_uitodp_4_no_dsp_32_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/uitodp_32ns_64_6_no_dsp_1_U50/multivariate_ap_uitodp_4_no_dsp_32_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized11) to 'inst/uitodp_32ns_64_6_no_dsp_1_U50/multivariate_ap_uitodp_4_no_dsp_32_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/uitodp_32ns_64_6_no_dsp_1_U50/multivariate_ap_uitodp_4_no_dsp_32_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized11) to 'inst/uitodp_32ns_64_6_no_dsp_1_U50/multivariate_ap_uitodp_4_no_dsp_32_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'inst/uitodp_32ns_64_6_no_dsp_1_U50/multivariate_ap_uitodp_4_no_dsp_32_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized11) to 'inst/uitodp_32ns_64_6_no_dsp_1_U50/multivariate_ap_uitodp_4_no_dsp_32_u/inst/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/uitodp_32ns_64_6_no_dsp_1_U50/multivariate_ap_uitodp_4_no_dsp_32_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized11) to 'inst/uitodp_32ns_64_6_no_dsp_1_U50/multivariate_ap_uitodp_4_no_dsp_32_u/inst/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/uitodp_32ns_64_6_no_dsp_1_U50/multivariate_ap_uitodp_4_no_dsp_32_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized11) to 'inst/uitodp_32ns_64_6_no_dsp_1_U50/multivariate_ap_uitodp_4_no_dsp_32_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/uitodp_32ns_64_6_no_dsp_1_U50/multivariate_ap_uitodp_4_no_dsp_32_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized11) to 'inst/uitodp_32ns_64_6_no_dsp_1_U50/multivariate_ap_uitodp_4_no_dsp_32_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/sitodp_32ns_64_6_no_dsp_1_U51/multivariate_ap_sitodp_4_no_dsp_32_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized11) to 'inst/sitodp_32ns_64_6_no_dsp_1_U51/multivariate_ap_sitodp_4_no_dsp_32_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/sitodp_32ns_64_6_no_dsp_1_U51/multivariate_ap_sitodp_4_no_dsp_32_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized11) to 'inst/sitodp_32ns_64_6_no_dsp_1_U51/multivariate_ap_sitodp_4_no_dsp_32_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/sitodp_32ns_64_6_no_dsp_1_U51/multivariate_ap_sitodp_4_no_dsp_32_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized53) to 'inst/sitodp_32ns_64_6_no_dsp_1_U51/multivariate_ap_sitodp_4_no_dsp_32_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/sitodp_32ns_64_6_no_dsp_1_U51/multivariate_ap_sitodp_4_no_dsp_32_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized53) to 'inst/sitodp_32ns_64_6_no_dsp_1_U51/multivariate_ap_sitodp_4_no_dsp_32_u/inst/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/sitodp_32ns_64_6_no_dsp_1_U51/multivariate_ap_sitodp_4_no_dsp_32_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized11) to 'inst/sitodp_32ns_64_6_no_dsp_1_U51/multivariate_ap_sitodp_4_no_dsp_32_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'inst/sitodp_32ns_64_6_no_dsp_1_U51/multivariate_ap_sitodp_4_no_dsp_32_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized11) to 'inst/sitodp_32ns_64_6_no_dsp_1_U51/multivariate_ap_sitodp_4_no_dsp_32_u/inst/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/sitodp_32ns_64_6_no_dsp_1_U51/multivariate_ap_sitodp_4_no_dsp_32_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized11) to 'inst/sitodp_32ns_64_6_no_dsp_1_U51/multivariate_ap_sitodp_4_no_dsp_32_u/inst/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/sitodp_32ns_64_6_no_dsp_1_U51/multivariate_ap_sitodp_4_no_dsp_32_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized11) to 'inst/sitodp_32ns_64_6_no_dsp_1_U51/multivariate_ap_sitodp_4_no_dsp_32_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/sitodp_32ns_64_6_no_dsp_1_U51/multivariate_ap_sitodp_4_no_dsp_32_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized11) to 'inst/sitodp_32ns_64_6_no_dsp_1_U51/multivariate_ap_sitodp_4_no_dsp_32_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:03 ; elapsed = 00:01:11 . Memory (MB): peak = 2718.133 ; gain = 286.352 ; free physical = 22848 ; free virtual = 29271
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:09 ; elapsed = 00:01:18 . Memory (MB): peak = 2740.117 ; gain = 308.336 ; free physical = 22587 ; free virtual = 29010
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:13 ; elapsed = 00:01:21 . Memory (MB): peak = 2771.117 ; gain = 339.336 ; free physical = 22555 ; free virtual = 28978
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/grp_pow_generic_double_s_fu_111/pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_V_U/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_59_0lbW_rom_U/q1_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_pow_generic_double_s_fu_111/pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_V_U/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_59_0lbW_rom_U/q1_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_pow_generic_double_s_fu_111/pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_V_U/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_59_0lbW_rom_U/q0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_pow_generic_double_s_fu_111/pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_V_U/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_59_0lbW_rom_U/q0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:22 ; elapsed = 00:01:30 . Memory (MB): peak = 2847.195 ; gain = 415.414 ; free physical = 22492 ; free virtual = 28914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:26 ; elapsed = 00:01:35 . Memory (MB): peak = 2867.117 ; gain = 435.336 ; free physical = 22487 ; free virtual = 28910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:26 ; elapsed = 00:01:35 . Memory (MB): peak = 2867.117 ; gain = 435.336 ; free physical = 22487 ; free virtual = 28910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:28 ; elapsed = 00:01:36 . Memory (MB): peak = 2867.117 ; gain = 435.336 ; free physical = 22481 ; free virtual = 28906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:28 ; elapsed = 00:01:36 . Memory (MB): peak = 2867.117 ; gain = 435.336 ; free physical = 22481 ; free virtual = 28906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:28 ; elapsed = 00:01:36 . Memory (MB): peak = 2867.117 ; gain = 435.336 ; free physical = 22480 ; free virtual = 28904
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:28 ; elapsed = 00:01:36 . Memory (MB): peak = 2867.117 ; gain = 435.336 ; free physical = 22480 ; free virtual = 28904
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   655|
+|2     |DSP48E1  |   119|
+|41    |LUT1     |   171|
+|42    |LUT2     |  1328|
+|43    |LUT3     |   975|
+|44    |LUT4     |  1451|
+|45    |LUT5     |   301|
+|46    |LUT6     |   941|
+|47    |MUXCY    |   360|
+|48    |MUXF7    |    20|
+|49    |MUXF8    |     1|
+|50    |RAMB18E1 |     7|
+|56    |RAMB36E1 |     7|
+|63    |SRL16E   |   870|
+|64    |SRLC32E  |    89|
+|65    |XORCY    |   226|
+|66    |FDE      |    35|
+|67    |FDRE     |  7923|
+|68    |FDSE     |     1|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:28 ; elapsed = 00:01:36 . Memory (MB): peak = 2867.117 ; gain = 435.336 ; free physical = 22480 ; free virtual = 28904
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:22 ; elapsed = 00:01:31 . Memory (MB): peak = 2867.117 ; gain = 262.617 ; free physical = 22551 ; free virtual = 28975
+Synthesis Optimization Complete : Time (s): cpu = 00:01:28 ; elapsed = 00:01:37 . Memory (MB): peak = 2867.125 ; gain = 435.336 ; free physical = 22551 ; free virtual = 28975
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.21 . Memory (MB): peak = 2867.125 ; gain = 0.000 ; free physical = 22634 ; free virtual = 29058
+INFO: [Netlist 29-17] Analyzing 1430 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2906.070 ; gain = 0.000 ; free physical = 22568 ; free virtual = 28992
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 134 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 99 instances
+  FDE => FDRE: 35 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+205 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:44 ; elapsed = 00:01:47 . Memory (MB): peak = 2906.070 ; gain = 474.469 ; free physical = 22919 ; free virtual = 29344
+INFO: [Common 17-1381] The checkpoint '/home/duyliontran/xilinx/zturn-driver/zturn-driver.runs/zturn_multivariate_0_0_synth_1/zturn_multivariate_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP zturn_multivariate_0_0, cache-ID = 4efa80443bf06247
+INFO: [Coretcl 2-1174] Renamed 300 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/duyliontran/xilinx/zturn-driver/zturn-driver.runs/zturn_multivariate_0_0_synth_1/zturn_multivariate_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file zturn_multivariate_0_0_utilization_synth.rpt -pb zturn_multivariate_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Apr  3 18:01:15 2022...

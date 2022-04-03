@@ -1,7 +1,7 @@
 //Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2020.2.2 (lin64) Build 3118627 Tue Feb  9 05:13:49 MST 2021
-//Date        : Sun Mar 20 23:20:06 2022
+//Date        : Sun Apr  3 17:59:04 2022
 //Host        : SnowLion7520 running 64-bit Ubuntu 18.04.6 LTS
 //Command     : generate_target zturn_wrapper.bd
 //Design      : zturn_wrapper

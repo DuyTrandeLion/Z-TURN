@@ -17,13 +17,14 @@ Design is defaulting to srcset: sources_1
 Design is defaulting to constrset: constrs_1
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Project 1-454] Reading design checkpoint '/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ip/zturn_axi_intc_0_0/zturn_axi_intc_0_0.dcp' for cell 'zturn_i/axi_intc_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ip/zturn_multivariate_0_0/zturn_multivariate_0_0.dcp' for cell 'zturn_i/multivariate_0'
 INFO: [Project 1-454] Reading design checkpoint '/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ip/zturn_pnq_0_1/zturn_pnq_0_1.dcp' for cell 'zturn_i/pnq_0'
 INFO: [Project 1-454] Reading design checkpoint '/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ip/zturn_processing_system7_0_0/zturn_processing_system7_0_0.dcp' for cell 'zturn_i/processing_system7_0'
 INFO: [Project 1-454] Reading design checkpoint '/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ip/zturn_rst_ps7_0_145M_0/zturn_rst_ps7_0_145M_0.dcp' for cell 'zturn_i/rst_ps7_0_145M'
 INFO: [Project 1-454] Reading design checkpoint '/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ip/zturn_xbar_0/zturn_xbar_0.dcp' for cell 'zturn_i/ps7_0_axi_periph/xbar'
 INFO: [Project 1-454] Reading design checkpoint '/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ip/zturn_auto_pc_0/zturn_auto_pc_0.dcp' for cell 'zturn_i/ps7_0_axi_periph/s00_couplers/auto_pc'
-Netlist sorting complete. Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.19 . Memory (MB): peak = 2419.844 ; gain = 0.000 ; free physical = 24044 ; free virtual = 30327
-INFO: [Netlist 29-17] Analyzing 776 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00.26 ; elapsed = 00:00:00.26 . Memory (MB): peak = 2430.785 ; gain = 0.000 ; free physical = 23202 ; free virtual = 29641
+INFO: [Netlist 29-17] Analyzing 1684 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2020.2.2
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -185,14 +186,14 @@ Finished Parsing XDC File [/home/duyliontran/xilinx/zturn-driver/zturn-driver.sr
 Parsing XDC File [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ip/zturn_axi_intc_0_0/zturn_axi_intc_0_0_clocks.xdc] for cell 'zturn_i/axi_intc_0/U0'
 Finished Parsing XDC File [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ip/zturn_axi_intc_0_0/zturn_axi_intc_0_0_clocks.xdc] for cell 'zturn_i/axi_intc_0/U0'
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2619.762 ; gain = 0.000 ; free physical = 23903 ; free virtual = 30182
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2638.707 ; gain = 0.000 ; free physical = 23070 ; free virtual = 29509
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 2 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 2 instances
 
-16 Infos, 49 Warnings, 48 Critical Warnings and 0 Errors encountered.
+17 Infos, 49 Warnings, 48 Critical Warnings and 0 Errors encountered.
 link_design completed successfully
-link_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2619.762 ; gain = 200.098 ; free physical = 23903 ; free virtual = 30182
+link_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2638.707 ; gain = 208.102 ; free physical = 23070 ; free virtual = 29509
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
@@ -203,55 +204,55 @@ INFO: [DRC 23-27] Running DRC with 8 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2619.762 ; gain = 0.000 ; free physical = 23889 ; free virtual = 30175
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.78 . Memory (MB): peak = 2638.707 ; gain = 0.000 ; free physical = 23058 ; free virtual = 29498
 
 Starting Cache Timing Information Task
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Ending Cache Timing Information Task | Checksum: 16040c571
+Ending Cache Timing Information Task | Checksum: 221ca3e82
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 2907.707 ; gain = 287.945 ; free physical = 23496 ; free virtual = 29784
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 2962.664 ; gain = 323.957 ; free physical = 22623 ; free virtual = 29062
 
 Starting Logic Optimization Task
 
 Phase 1 Retarget
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 1 Retarget | Checksum: 21cb8b7f5
+Phase 1 Retarget | Checksum: 15893e434
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.71 . Memory (MB): peak = 3089.645 ; gain = 0.000 ; free physical = 23338 ; free virtual = 29633
-INFO: [Opt 31-389] Phase Retarget created 34 cells and removed 67 cells
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.98 . Memory (MB): peak = 3145.570 ; gain = 0.000 ; free physical = 22509 ; free virtual = 28949
+INFO: [Opt 31-389] Phase Retarget created 63 cells and removed 98 cells
 INFO: [Opt 31-1021] In phase Retarget, 1 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 2 Constant propagation
 INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
-Phase 2 Constant propagation | Checksum: 1cf7e9b82
+Phase 2 Constant propagation | Checksum: 20643813e
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.90 . Memory (MB): peak = 3089.645 ; gain = 0.000 ; free physical = 23339 ; free virtual = 29634
-INFO: [Opt 31-389] Phase Constant propagation created 72 cells and removed 241 cells
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 3145.570 ; gain = 0.000 ; free physical = 22509 ; free virtual = 28948
+INFO: [Opt 31-389] Phase Constant propagation created 212 cells and removed 789 cells
 
 Phase 3 Sweep
-Phase 3 Sweep | Checksum: 1b239c0dd
+Phase 3 Sweep | Checksum: 2116501cf
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3089.645 ; gain = 0.000 ; free physical = 23336 ; free virtual = 29633
-INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 163 cells
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 3145.570 ; gain = 0.000 ; free physical = 22506 ; free virtual = 28946
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 197 cells
 
 Phase 4 BUFG optimization
-Phase 4 BUFG optimization | Checksum: 1b239c0dd
+Phase 4 BUFG optimization | Checksum: 2116501cf
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3089.645 ; gain = 0.000 ; free physical = 23336 ; free virtual = 29633
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 3145.570 ; gain = 0.000 ; free physical = 22508 ; free virtual = 28948
 INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
 
 Phase 5 Shift Register Optimization
 INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
-Phase 5 Shift Register Optimization | Checksum: 195cf4962
+Phase 5 Shift Register Optimization | Checksum: 2361dd7db
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3089.645 ; gain = 0.000 ; free physical = 23335 ; free virtual = 29632
-INFO: [Opt 31-389] Phase Shift Register Optimization created 4 cells and removed 0 cells
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 3145.570 ; gain = 0.000 ; free physical = 22508 ; free virtual = 28948
+INFO: [Opt 31-389] Phase Shift Register Optimization created 8 cells and removed 0 cells
 
 Phase 6 Post Processing Netlist
-Phase 6 Post Processing Netlist | Checksum: 195cf4962
+Phase 6 Post Processing Netlist | Checksum: 2361dd7db
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3089.645 ; gain = 0.000 ; free physical = 23335 ; free virtual = 29632
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 3145.570 ; gain = 0.000 ; free physical = 22508 ; free virtual = 28948
 INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
 Opt_design Change Summary
 =========================
@@ -260,11 +261,11 @@ Opt_design Change Summary
 -------------------------------------------------------------------------------------------------------------------------
 |  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
 -------------------------------------------------------------------------------------------------------------------------
-|  Retarget                     |              34  |              67  |                                              1  |
-|  Constant propagation         |              72  |             241  |                                              0  |
-|  Sweep                        |               0  |             163  |                                              0  |
+|  Retarget                     |              63  |              98  |                                              1  |
+|  Constant propagation         |             212  |             789  |                                              0  |
+|  Sweep                        |               0  |             197  |                                              0  |
 |  BUFG optimization            |               0  |               0  |                                              0  |
-|  Shift Register Optimization  |               4  |               0  |                                              0  |
+|  Shift Register Optimization  |               8  |               0  |                                              0  |
 |  Post Processing Netlist      |               0  |               0  |                                              0  |
 -------------------------------------------------------------------------------------------------------------------------
 
@@ -272,10 +273,10 @@ Opt_design Change Summary
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3089.645 ; gain = 0.000 ; free physical = 23342 ; free virtual = 29634
-Ending Logic Optimization Task | Checksum: 16030eeb6
+Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3145.570 ; gain = 0.000 ; free physical = 22511 ; free virtual = 28951
+Ending Logic Optimization Task | Checksum: 13073328e
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 3089.645 ; gain = 0.000 ; free physical = 23342 ; free virtual = 29634
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 3145.570 ; gain = 0.000 ; free physical = 22511 ; free virtual = 28951
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
@@ -288,42 +289,42 @@ Finished Running Vector-less Activity Propagation
 
 
 Starting PowerOpt Patch Enables Task
-INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 14 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
-INFO: [Pwropt 34-201] Structural ODC has moved 2 WE to EN ports
-Number of BRAM Ports augmented: 18 newly gated: 7 Total Ports: 28
-Ending PowerOpt Patch Enables Task | Checksum: 1e70935d9
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 28 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 4 WE to EN ports
+Number of BRAM Ports augmented: 36 newly gated: 25 Total Ports: 56
+Ending PowerOpt Patch Enables Task | Checksum: 2457ce623
 
-Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.13 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23325 ; free virtual = 29616
-Ending Power Optimization Task | Checksum: 1e70935d9
+Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.17 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22449 ; free virtual = 28889
+Ending Power Optimization Task | Checksum: 2457ce623
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:04 . Memory (MB): peak = 3420.715 ; gain = 331.070 ; free physical = 23335 ; free virtual = 29626
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 3541.383 ; gain = 395.812 ; free physical = 22474 ; free virtual = 28914
 
 Starting Final Cleanup Task
 
 Starting Logic Optimization Task
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Ending Logic Optimization Task | Checksum: 11e722549
+Ending Logic Optimization Task | Checksum: 25e872219
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23343 ; free virtual = 29629
-Ending Final Cleanup Task | Checksum: 11e722549
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:02 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22480 ; free virtual = 28920
+Ending Final Cleanup Task | Checksum: 25e872219
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23343 ; free virtual = 29630
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:04 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22480 ; free virtual = 28920
 
 Starting Netlist Obfuscation Task
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23343 ; free virtual = 29630
-Ending Netlist Obfuscation Task | Checksum: 11e722549
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22480 ; free virtual = 28920
+Ending Netlist Obfuscation Task | Checksum: 25e872219
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23343 ; free virtual = 29630
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22480 ; free virtual = 28920
 INFO: [Common 17-83] Releasing license: Implementation
-40 Infos, 49 Warnings, 48 Critical Warnings and 0 Errors encountered.
+41 Infos, 49 Warnings, 48 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:29 . Memory (MB): peak = 3420.715 ; gain = 800.953 ; free physical = 23343 ; free virtual = 29630
+opt_design: Time (s): cpu = 00:00:48 ; elapsed = 00:00:28 . Memory (MB): peak = 3541.383 ; gain = 902.676 ; free physical = 22480 ; free virtual = 28920
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23339 ; free virtual = 29629
+Write XDEF Complete: Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22474 ; free virtual = 28917
 INFO: [Common 17-1381] The checkpoint '/home/duyliontran/xilinx/zturn-driver/zturn-driver.runs/impl_1/zturn_wrapper_opt.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_drc -file zturn_wrapper_drc_opted.rpt -pb zturn_wrapper_drc_opted.pb -rpx zturn_wrapper_drc_opted.rpx
 Command: report_drc -file zturn_wrapper_drc_opted.rpt -pb zturn_wrapper_drc_opted.pb -rpx zturn_wrapper_drc_opted.rpx
@@ -349,98 +350,178 @@ INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 
 Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Netlist Sorting
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23246 ; free virtual = 29546
-Phase 1.1 Placer Initialization Netlist Sorting | Checksum: da73f186
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22353 ; free virtual = 28800
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 1b6e5f3d6
 
-Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23246 ; free virtual = 29546
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23246 ; free virtual = 29546
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22353 ; free virtual = 28800
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22353 ; free virtual = 28800
 
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
-Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 108c9e3a4
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 17470b9c1
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23260 ; free virtual = 29556
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22386 ; free virtual = 28836
 
 Phase 1.3 Build Placer Netlist Model
-Phase 1.3 Build Placer Netlist Model | Checksum: 1f85c1f66
+Phase 1.3 Build Placer Netlist Model | Checksum: 1ee92c064
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:04 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23280 ; free virtual = 29579
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:05 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22375 ; free virtual = 28825
 
 Phase 1.4 Constrain Clocks/Macros
-Phase 1.4 Constrain Clocks/Macros | Checksum: 1f85c1f66
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1ee92c064
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:04 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23279 ; free virtual = 29579
-Phase 1 Placer Initialization | Checksum: 1f85c1f66
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:05 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22375 ; free virtual = 28825
+Phase 1 Placer Initialization | Checksum: 1ee92c064
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:04 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23278 ; free virtual = 29578
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:05 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22373 ; free virtual = 28823
 
 Phase 2 Global Placement
 
 Phase 2.1 Floorplanning
-Phase 2.1 Floorplanning | Checksum: 1de139df3
+Phase 2.1 Floorplanning | Checksum: 13338b5db
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23267 ; free virtual = 29568
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:06 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22349 ; free virtual = 28799
 
 Phase 2.2 Update Timing before SLR Path Opt
-Phase 2.2 Update Timing before SLR Path Opt | Checksum: 1638ada26
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 189ad56cb
 
-Time (s): cpu = 00:00:13 ; elapsed = 00:00:05 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23268 ; free virtual = 29568
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:07 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22351 ; free virtual = 28801
 
 Phase 2.3 Global Placement Core
 
 Phase 2.3.1 Physical Synthesis In Placer
-INFO: [Physopt 32-1035] Found 32 LUTNM shape to break, 178 LUT instances to create LUTNM shape
-INFO: [Physopt 32-1044] Break lutnm for timing: one critical 21, two critical 11, total 32, new lutff created 1
-INFO: [Physopt 32-775] End 1 Pass. Optimized 109 nets or cells. Created 32 new cells, deleted 77 existing cells and moved 0 existing cell
+INFO: [Physopt 32-1035] Found 74 LUTNM shape to break, 352 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 33, two critical 41, total 74, new lutff created 2
+INFO: [Physopt 32-775] End 1 Pass. Optimized 228 nets or cells. Created 74 new cells, deleted 154 existing cells and moved 0 existing cell
 INFO: [Physopt 32-65] No nets found for high-fanout optimization.
 INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
-INFO: [Physopt 32-457] Pass 1. Identified 28 candidate cells for DSP register optimization.
-INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_87ns_6ns_93_5_1_U6/pnq_mul_87ns_6ns_93_5_1_Multiplier_5_U/tmp_product. 6 registers were pushed out.
-INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_87ns_6ns_93_5_1_U6/pnq_mul_87ns_6ns_93_5_1_Multiplier_5_U/buff0_reg. 6 registers were pushed out.
+INFO: [Physopt 32-46] Identified 17 candidate nets for critical-cell optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-457] Pass 1. Identified 50 candidate cells for DSP register optimization.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77s_55ns_130_5_1_U12/multivariate_mul_77s_55ns_130_5_1_Multiplier_11_U/buff1_reg__1. 48 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77s_54ns_130_5_1_U11/multivariate_mul_77s_54ns_130_5_1_Multiplier_10_U/buff1_reg__3. 48 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77s_55ns_130_5_1_U12/multivariate_mul_77s_55ns_130_5_1_Multiplier_11_U/buff1_reg__3. 48 registers were pushed out.
 INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/pnq_mul_40ns_40ns_80_2_1_Multiplier_9_U/p_reg__1. 23 registers were pushed out.
-INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mac_muladd_16s_16ns_19s_31_4_1_U15/pnq_mac_muladd_16s_16ns_19s_31_4_1_DSP48_0_U/p_reg_reg. 16 registers were pushed out.
-INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_50ns_50ns_100_5_1_U14/pnq_mul_50ns_50ns_100_5_1_Multiplier_13_U/buff1_reg__0. 16 registers were pushed out.
-INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_82ns_6ns_88_5_1_U7/pnq_mul_82ns_6ns_88_5_1_Multiplier_6_U/tmp_product. 6 registers were pushed out.
-INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_82ns_6ns_88_5_1_U7/pnq_mul_82ns_6ns_88_5_1_Multiplier_6_U/buff0_reg. 6 registers were pushed out.
-INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_43ns_36ns_79_3_1_U12/pnq_mul_43ns_36ns_79_3_1_Multiplier_11_U/buff0_reg. 19 registers were pushed out.
-INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_43ns_36ns_79_3_1_U12/pnq_mul_43ns_36ns_79_3_1_Multiplier_11_U/buff0_reg__1. 19 registers were pushed out.
-INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_92ns_6ns_98_5_1_U5/pnq_mul_92ns_6ns_98_5_1_Multiplier_4_U/tmp_product. 6 registers were pushed out.
-INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_77ns_6ns_83_5_1_U8/pnq_mul_77ns_6ns_83_5_1_Multiplier_7_U/buff0_reg. 6 registers were pushed out.
-INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_77ns_6ns_83_5_1_U8/pnq_mul_77ns_6ns_83_5_1_Multiplier_7_U/tmp_product. 6 registers were pushed out.
-INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_50ns_50ns_100_5_1_U14/pnq_mul_50ns_50ns_100_5_1_Multiplier_13_U/tmp_product. 16 registers were pushed out.
-INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_50ns_50ns_100_5_1_U14/pnq_mul_50ns_50ns_100_5_1_Multiplier_13_U/buff1_reg. 16 registers were pushed out.
-INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_73ns_6ns_79_5_1_U3/pnq_mul_73ns_6ns_79_5_1_Multiplier_2_U/buff0_reg. 6 registers were pushed out.
-INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/pnq_mul_40ns_40ns_80_2_1_Multiplier_9_U/p_reg. 6 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77s_55ns_130_5_1_U12/multivariate_mul_77s_55ns_130_5_1_Multiplier_11_U/buff1_reg. 9 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77s_55ns_130_5_1_U12/multivariate_mul_77s_55ns_130_5_1_Multiplier_11_U/buff1_reg__2. 48 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77s_54ns_130_5_1_U11/multivariate_mul_77s_54ns_130_5_1_Multiplier_10_U/buff1_reg__2. 48 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/pnq_mul_40ns_40ns_80_2_1_Multiplier_9_U/tmp_product. 23 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77s_54ns_130_5_1_U11/multivariate_mul_77s_54ns_130_5_1_Multiplier_10_U/buff1_reg__1. 48 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_87ns_6ns_93_5_1_U6/multivariate_mul_87ns_6ns_93_5_1_Multiplier_5_U/buff0_reg. 6 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77s_55ns_130_5_1_U12/multivariate_mul_77s_55ns_130_5_1_Multiplier_11_U/tmp_product. 9 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77s_54ns_130_5_1_U11/multivariate_mul_77s_54ns_130_5_1_Multiplier_10_U/buff1_reg__0. 9 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77s_55ns_130_5_1_U12/multivariate_mul_77s_55ns_130_5_1_Multiplier_11_U/buff1_reg__0. 9 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77s_54ns_130_5_1_U11/multivariate_mul_77s_54ns_130_5_1_Multiplier_10_U/tmp_product. 9 registers were pushed out.
 INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_49ns_44ns_93_5_1_U13/pnq_mul_49ns_44ns_93_5_1_Multiplier_12_U/buff0_reg__0. 10 registers were pushed out.
-INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_49ns_44ns_93_5_1_U13/pnq_mul_49ns_44ns_93_5_1_Multiplier_12_U/tmp_product__1. 17 registers were pushed out.
-INFO: [Physopt 32-666] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/pnq_mul_40ns_40ns_80_2_1_Multiplier_9_U/tmp_product. No change.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77s_54ns_130_5_1_U11/multivariate_mul_77s_54ns_130_5_1_Multiplier_10_U/buff1_reg. 9 registers were pushed out.
 INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/pnq_mul_40ns_40ns_80_2_1_Multiplier_9_U/p_reg__0. 23 registers were pushed out.
-INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_92ns_6ns_98_5_1_U5/pnq_mul_92ns_6ns_98_5_1_Multiplier_4_U/buff0_reg. 6 registers were pushed out.
-INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/pnq_mul_40ns_40ns_80_2_1_Multiplier_9_U/p_reg. 23 registers were pushed out.
-INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_43ns_36ns_79_3_1_U12/pnq_mul_43ns_36ns_79_3_1_Multiplier_11_U/buff0_reg__0. 19 registers were pushed out.
 INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/pnq_mul_40ns_40ns_80_2_1_Multiplier_9_U/p_reg__0. 17 registers were pushed out.
-INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_83ns_6ns_89_5_1_U4/pnq_mul_83ns_6ns_89_5_1_Multiplier_3_U/buff0_reg. 6 registers were pushed out.
-INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_83ns_6ns_89_5_1_U4/pnq_mul_83ns_6ns_89_5_1_Multiplier_3_U/tmp_product. 6 registers were pushed out.
-INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_49ns_44ns_93_5_1_U13/pnq_mul_49ns_44ns_93_5_1_Multiplier_12_U/buff0_reg. 10 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/pnq_mul_40ns_40ns_80_2_1_Multiplier_9_U/p_reg. 6 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/pnq_mul_40ns_40ns_80_2_1_Multiplier_9_U/p_reg. 23 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_87ns_6ns_93_5_1_U6/multivariate_mul_87ns_6ns_93_5_1_Multiplier_5_U/tmp_product. 6 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77s_55ns_130_5_1_U12/multivariate_mul_77s_55ns_130_5_1_Multiplier_11_U/buff0_reg. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_49ns_44ns_93_5_1_U13/pnq_mul_49ns_44ns_93_5_1_Multiplier_12_U/tmp_product__1. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_92ns_6ns_98_5_1_U5/multivariate_mul_92ns_6ns_98_5_1_Multiplier_4_U/tmp_product. 6 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_92ns_6ns_98_5_1_U5/multivariate_mul_92ns_6ns_98_5_1_Multiplier_4_U/buff0_reg. 6 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_87ns_6ns_93_5_1_U6/pnq_mul_87ns_6ns_93_5_1_Multiplier_5_U/tmp_product. 6 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/pnq_mul_40ns_40ns_80_2_1_Multiplier_9_U/p_reg__1. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_87ns_6ns_93_5_1_U6/pnq_mul_87ns_6ns_93_5_1_Multiplier_5_U/buff0_reg. 6 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/pnq_mul_40ns_40ns_80_2_1_Multiplier_9_U/tmp_product__0. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_50ns_50ns_100_5_1_U14/pnq_mul_50ns_50ns_100_5_1_Multiplier_13_U/buff1_reg__0. 16 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77s_55ns_130_5_1_U12/multivariate_mul_77s_55ns_130_5_1_Multiplier_11_U/buff1_reg__1. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77s_55ns_130_5_1_U12/multivariate_mul_77s_55ns_130_5_1_Multiplier_11_U/tmp_product__0. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77s_54ns_130_5_1_U11/multivariate_mul_77s_54ns_130_5_1_Multiplier_10_U/buff0_reg. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_50ns_50ns_100_5_1_U14/pnq_mul_50ns_50ns_100_5_1_Multiplier_13_U/buff1_reg. 16 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_50ns_50ns_100_5_1_U14/pnq_mul_50ns_50ns_100_5_1_Multiplier_13_U/buff1_reg__1. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mac_muladd_16s_16ns_19s_31_4_1_U15/pnq_mac_muladd_16s_16ns_19s_31_4_1_DSP48_0_U/p_reg_reg. 16 registers were pushed out.
 INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_49ns_44ns_93_5_1_U13/pnq_mul_49ns_44ns_93_5_1_Multiplier_12_U/buff1_reg. 10 registers were pushed out.
-INFO: [Physopt 32-457] Pass 2. Identified 1 candidate cell for DSP register optimization.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_82ns_6ns_88_5_1_U7/multivariate_mul_82ns_6ns_88_5_1_Multiplier_6_U/tmp_product. 6 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_82ns_6ns_88_5_1_U7/multivariate_mul_82ns_6ns_88_5_1_Multiplier_6_U/buff0_reg. 6 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_50ns_50ns_100_5_1_U14/pnq_mul_50ns_50ns_100_5_1_Multiplier_13_U/tmp_product. 16 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_49ns_44ns_93_5_1_U13/pnq_mul_49ns_44ns_93_5_1_Multiplier_12_U/buff0_reg. 10 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/pnq_mul_40ns_40ns_80_2_1_Multiplier_9_U/tmp_product__0. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_49ns_44ns_93_5_1_U13/pnq_mul_49ns_44ns_93_5_1_Multiplier_12_U/tmp_product__0. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_50ns_50ns_100_5_1_U16/multivariate_mul_50ns_50ns_100_5_1_Multiplier_15_U/tmp_product. 16 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_92ns_6ns_98_5_1_U5/pnq_mul_92ns_6ns_98_5_1_Multiplier_4_U/buff0_reg. 6 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77s_54ns_130_5_1_U11/multivariate_mul_77s_54ns_130_5_1_Multiplier_10_U/tmp_product__0. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77s_54ns_130_5_1_U11/multivariate_mul_77s_54ns_130_5_1_Multiplier_10_U/buff1_reg__1. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77ns_6ns_83_5_1_U8/multivariate_mul_77ns_6ns_83_5_1_Multiplier_7_U/buff0_reg. 6 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_83ns_6ns_89_5_1_U4/multivariate_mul_83ns_6ns_89_5_1_Multiplier_3_U/tmp_product. 6 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_83ns_6ns_89_5_1_U4/multivariate_mul_83ns_6ns_89_5_1_Multiplier_3_U/buff0_reg. 6 registers were pushed out.
+INFO: [Physopt 32-457] Pass 2. Identified 3 candidate cells for DSP register optimization.
+INFO: [Physopt 32-457] Pass 2. Identified 50 candidate cells for DSP register optimization.
 INFO: [Physopt 32-666] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/pnq_mul_40ns_40ns_80_2_1_Multiplier_9_U/tmp_product. No change.
-INFO: [Physopt 32-775] End 2 Pass. Optimized 27 nets or cells. Created 326 new cells, deleted 0 existing cell and moved 0 existing cell
-Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23229 ; free virtual = 29533
+INFO: [Physopt 32-666] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/pnq_mul_40ns_40ns_80_2_1_Multiplier_9_U/tmp_product__0. No change.
+INFO: [Physopt 32-666] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/pnq_mul_40ns_40ns_80_2_1_Multiplier_9_U/tmp_product__0. No change.
+INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_77ns_6ns_83_5_1_U8/pnq_mul_77ns_6ns_83_5_1_Multiplier_7_U/buff0_reg. 6 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_82ns_6ns_88_5_1_U7/pnq_mul_82ns_6ns_88_5_1_Multiplier_6_U/buff0_reg. 6 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_82ns_6ns_88_5_1_U7/pnq_mul_82ns_6ns_88_5_1_Multiplier_6_U/tmp_product. 6 registers were pushed out.
+INFO: [Physopt 32-666] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/pnq_mul_40ns_40ns_80_2_1_Multiplier_9_U/tmp_product. No change.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77s_55ns_130_5_1_U12/multivariate_mul_77s_55ns_130_5_1_Multiplier_11_U/tmp_product__1. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_50ns_50ns_100_5_1_U16/multivariate_mul_50ns_50ns_100_5_1_Multiplier_15_U/buff1_reg. 16 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_83ns_6ns_89_5_1_U4/pnq_mul_83ns_6ns_89_5_1_Multiplier_3_U/tmp_product. 6 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_83ns_6ns_89_5_1_U4/pnq_mul_83ns_6ns_89_5_1_Multiplier_3_U/buff0_reg. 6 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_92ns_6ns_98_5_1_U5/pnq_mul_92ns_6ns_98_5_1_Multiplier_4_U/tmp_product. 6 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77s_55ns_130_5_1_U12/multivariate_mul_77s_55ns_130_5_1_Multiplier_11_U/buff1_reg__2. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_77ns_6ns_83_5_1_U8/pnq_mul_77ns_6ns_83_5_1_Multiplier_7_U/tmp_product. 6 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_49ns_44ns_93_5_1_U15/multivariate_mul_49ns_44ns_93_5_1_Multiplier_14_U/buff0_reg__0. 10 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77ns_6ns_83_5_1_U8/multivariate_mul_77ns_6ns_83_5_1_Multiplier_7_U/tmp_product. 6 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_49ns_44ns_93_5_1_U13/pnq_mul_49ns_44ns_93_5_1_Multiplier_12_U/tmp_product. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_49ns_44ns_93_5_1_U15/multivariate_mul_49ns_44ns_93_5_1_Multiplier_14_U/tmp_product__0. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_50ns_50ns_100_5_1_U16/multivariate_mul_50ns_50ns_100_5_1_Multiplier_15_U/buff1_reg__0. 16 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77s_54ns_130_5_1_U11/multivariate_mul_77s_54ns_130_5_1_Multiplier_10_U/buff0_reg__0. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77s_55ns_130_5_1_U12/multivariate_mul_77s_55ns_130_5_1_Multiplier_11_U/buff0_reg__0. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_49ns_44ns_93_5_1_U15/multivariate_mul_49ns_44ns_93_5_1_Multiplier_14_U/buff1_reg. 10 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/multivariate_mul_40ns_40ns_80_2_1_Multiplier_9_U/p_reg__0. 23 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_50ns_50ns_100_5_1_U14/pnq_mul_50ns_50ns_100_5_1_Multiplier_13_U/tmp_product__1. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_43ns_36ns_79_3_1_U12/pnq_mul_43ns_36ns_79_3_1_Multiplier_11_U/buff0_reg. 19 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/multivariate_mul_40ns_40ns_80_2_1_Multiplier_9_U/p_reg__1. 23 registers were pushed out.
+INFO: [Physopt 32-666] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/multivariate_mul_40ns_40ns_80_2_1_Multiplier_9_U/tmp_product. No change.
+INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_50ns_50ns_100_5_1_U14/pnq_mul_50ns_50ns_100_5_1_Multiplier_13_U/buff0_reg__1. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/multivariate_mul_40ns_40ns_80_2_1_Multiplier_9_U/p_reg__0. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_50ns_50ns_100_5_1_U14/pnq_mul_50ns_50ns_100_5_1_Multiplier_13_U/tmp_product__0. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_49ns_44ns_93_5_1_U13/pnq_mul_49ns_44ns_93_5_1_Multiplier_12_U/buff1_reg__1. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77s_54ns_130_5_1_U11/multivariate_mul_77s_54ns_130_5_1_Multiplier_10_U/tmp_product__1. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/multivariate_mul_40ns_40ns_80_2_1_Multiplier_9_U/p_reg. 6 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/multivariate_mul_40ns_40ns_80_2_1_Multiplier_9_U/p_reg. 23 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_43ns_36ns_79_3_1_U12/pnq_mul_43ns_36ns_79_3_1_Multiplier_11_U/buff0_reg__0. 19 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_49ns_44ns_93_5_1_U15/multivariate_mul_49ns_44ns_93_5_1_Multiplier_14_U/tmp_product. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77s_54ns_130_5_1_U11/multivariate_mul_77s_54ns_130_5_1_Multiplier_10_U/buff1_reg__2. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_49ns_44ns_93_5_1_U15/multivariate_mul_49ns_44ns_93_5_1_Multiplier_14_U/buff0_reg. 10 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77s_55ns_130_5_1_U12/multivariate_mul_77s_55ns_130_5_1_Multiplier_11_U/buff1_reg__3. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_50ns_50ns_100_5_1_U14/pnq_mul_50ns_50ns_100_5_1_Multiplier_13_U/buff0_reg. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_43ns_36ns_79_3_1_U14/multivariate_mul_43ns_36ns_79_3_1_Multiplier_13_U/buff0_reg__0. 19 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_49ns_44ns_93_5_1_U13/pnq_mul_49ns_44ns_93_5_1_Multiplier_12_U/buff0_reg__1. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_43ns_36ns_79_3_1_U14/multivariate_mul_43ns_36ns_79_3_1_Multiplier_13_U/buff0_reg. 19 registers were pushed out.
+INFO: [Physopt 32-666] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_43ns_36ns_79_3_1_U12/pnq_mul_43ns_36ns_79_3_1_Multiplier_11_U/buff0_reg__1. No change.
+INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_73ns_6ns_79_5_1_U3/pnq_mul_73ns_6ns_79_5_1_Multiplier_2_U/buff0_reg. 6 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_87ns_6ns_93_5_1_U6/pnq_mul_87ns_6ns_93_5_1_Multiplier_5_U/buff1_reg. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77s_55ns_130_5_1_U12/multivariate_mul_77s_55ns_130_5_1_Multiplier_11_U/buff0_reg__1. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77s_55ns_130_5_1_U12/multivariate_mul_77s_55ns_130_5_1_Multiplier_11_U/tmp_product__2. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_77ns_6ns_83_5_1_U8/pnq_mul_77ns_6ns_83_5_1_Multiplier_7_U/buff1_reg. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_73ns_6ns_79_5_1_U3/multivariate_mul_73ns_6ns_79_5_1_Multiplier_2_U/buff0_reg. 6 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_49ns_44ns_93_5_1_U15/multivariate_mul_49ns_44ns_93_5_1_Multiplier_14_U/tmp_product__1. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_43ns_36ns_79_3_1_U12/pnq_mul_43ns_36ns_79_3_1_Multiplier_11_U/tmp_product. 17 registers were pushed out.
+INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_43ns_36ns_79_3_1_U12/pnq_mul_43ns_36ns_79_3_1_Multiplier_11_U/buff0_reg__1. 19 registers were pushed out.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 97 nets or cells. Created 1526 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.10 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22317 ; free virtual = 28767
 INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
-INFO: [Physopt 32-775] End 1 Pass. Optimized 36 nets or cells. Created 72 new cells, deleted 0 existing cell and moved 0 existing cell
-Netlist sorting complete. Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.09 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23227 ; free virtual = 29532
-INFO: [Physopt 32-527] Pass 1: Identified 2 candidate cells for BRAM register optimization
+INFO: [Physopt 32-775] End 1 Pass. Optimized 45 nets or cells. Created 90 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.11 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22317 ; free virtual = 28767
+INFO: [Physopt 32-527] Pass 1: Identified 3 candidate cells for BRAM register optimization
+INFO: [Physopt 32-665] Processed cell zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_121_12_ap_q_mode_5_ap_o_mode_3_0_22_6_64_array_V_U/multivariate_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12hbi_rom_U/q0_reg. 36 registers were pushed out.
 INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_121_12_ap_q_mode_5_ap_o_mode_3_0_17_6_64_array_V_U/pnq_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12g8j_rom_U/q0_reg_0. 36 registers were pushed out.
 INFO: [Physopt 32-665] Processed cell zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_121_12_ap_q_mode_5_ap_o_mode_3_0_22_6_64_array_V_U/pnq_pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12hbi_rom_U/q0_reg. 36 registers were pushed out.
-INFO: [Physopt 32-775] End 1 Pass. Optimized 2 nets or cells. Created 72 new cells, deleted 0 existing cell and moved 0 existing cell
-Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23228 ; free virtual = 29533
+INFO: [Common 17-14] Message 'Physopt 32-665' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 3 nets or cells. Created 108 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22317 ; free virtual = 28767
 INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
 INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
 INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23229 ; free virtual = 29533
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22316 ; free virtual = 28767
 
 Summary of Physical Synthesis Optimizations
 ============================================
@@ -449,77 +530,78 @@ Summary of Physical Synthesis Optimizations
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 |  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-|  LUT Combining                                    |           32  |             77  |                   109  |           0  |           1  |  00:00:00  |
+|  LUT Combining                                    |           74  |            154  |                   228  |           0  |           1  |  00:00:00  |
 |  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
-|  DSP Register                                     |          326  |              0  |                    27  |           0  |           1  |  00:00:04  |
+|  Critical Cell                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |         1526  |              0  |                    97  |           0  |           1  |  00:00:09  |
 |  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
-|  Shift Register                                   |           72  |              0  |                    36  |           0  |           1  |  00:00:00  |
-|  BRAM Register                                    |           72  |              0  |                     2  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |           90  |              0  |                    45  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |          108  |              0  |                     3  |           0  |           1  |  00:00:00  |
 |  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
-|  Total                                            |          502  |             77  |                   174  |           0  |           8  |  00:00:05  |
+|  Total                                            |         1798  |            154  |                   373  |           0  |           9  |  00:00:10  |
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-Phase 2.3.1 Physical Synthesis In Placer | Checksum: 1411763f4
+Phase 2.3.1 Physical Synthesis In Placer | Checksum: 23a33b8c1
 
-Time (s): cpu = 00:00:43 ; elapsed = 00:00:18 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23232 ; free virtual = 29534
-Phase 2.3 Global Placement Core | Checksum: 158724305
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:29 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22312 ; free virtual = 28762
+Phase 2.3 Global Placement Core | Checksum: 231ec17a2
 
-Time (s): cpu = 00:00:45 ; elapsed = 00:00:19 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23229 ; free virtual = 29532
-Phase 2 Global Placement | Checksum: 158724305
+Time (s): cpu = 00:01:13 ; elapsed = 00:00:29 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22310 ; free virtual = 28760
+Phase 2 Global Placement | Checksum: 231ec17a2
 
-Time (s): cpu = 00:00:45 ; elapsed = 00:00:19 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23232 ; free virtual = 29535
+Time (s): cpu = 00:01:13 ; elapsed = 00:00:29 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22317 ; free virtual = 28767
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: 1c5321dc4
+Phase 3.1 Commit Multi Column Macros | Checksum: 25be5a545
 
-Time (s): cpu = 00:00:47 ; elapsed = 00:00:20 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23233 ; free virtual = 29536
+Time (s): cpu = 00:01:17 ; elapsed = 00:00:30 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22318 ; free virtual = 28768
 
 Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: c095fe23
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1446e496d
 
-Time (s): cpu = 00:00:51 ; elapsed = 00:00:21 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23240 ; free virtual = 29542
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:32 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22313 ; free virtual = 28763
 
 Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: 18225b24d
+Phase 3.3 Area Swap Optimization | Checksum: 10d48e599
 
-Time (s): cpu = 00:00:51 ; elapsed = 00:00:21 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23229 ; free virtual = 29534
+Time (s): cpu = 00:01:24 ; elapsed = 00:00:33 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22313 ; free virtual = 28763
 
 Phase 3.4 Pipeline Register Optimization
-Phase 3.4 Pipeline Register Optimization | Checksum: bca4422a
+Phase 3.4 Pipeline Register Optimization | Checksum: 19d162598
 
-Time (s): cpu = 00:00:51 ; elapsed = 00:00:21 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23229 ; free virtual = 29533
+Time (s): cpu = 00:01:24 ; elapsed = 00:00:33 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22313 ; free virtual = 28763
 
 Phase 3.5 Fast Optimization
-Phase 3.5 Fast Optimization | Checksum: f3690f7d
+Phase 3.5 Fast Optimization | Checksum: 1025cda67
 
-Time (s): cpu = 00:00:54 ; elapsed = 00:00:22 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23214 ; free virtual = 29525
+Time (s): cpu = 00:01:30 ; elapsed = 00:00:34 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22308 ; free virtual = 28758
 
 Phase 3.6 Small Shape Detail Placement
-Phase 3.6 Small Shape Detail Placement | Checksum: 10e7e86a4
+Phase 3.6 Small Shape Detail Placement | Checksum: 1b47f27c7
 
-Time (s): cpu = 00:00:57 ; elapsed = 00:00:24 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23221 ; free virtual = 29523
+Time (s): cpu = 00:01:34 ; elapsed = 00:00:37 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22297 ; free virtual = 28748
 
 Phase 3.7 Re-assign LUT pins
-Phase 3.7 Re-assign LUT pins | Checksum: 11451e3ed
+Phase 3.7 Re-assign LUT pins | Checksum: 1d26c46ed
 
-Time (s): cpu = 00:00:57 ; elapsed = 00:00:24 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23228 ; free virtual = 29525
+Time (s): cpu = 00:01:35 ; elapsed = 00:00:38 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22297 ; free virtual = 28748
 
 Phase 3.8 Pipeline Register Optimization
-Phase 3.8 Pipeline Register Optimization | Checksum: 145e9f4b2
+Phase 3.8 Pipeline Register Optimization | Checksum: 15438a592
 
-Time (s): cpu = 00:00:57 ; elapsed = 00:00:25 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23223 ; free virtual = 29526
+Time (s): cpu = 00:01:35 ; elapsed = 00:00:39 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22297 ; free virtual = 28748
 
 Phase 3.9 Fast Optimization
-Phase 3.9 Fast Optimization | Checksum: 195fd1a0a
+Phase 3.9 Fast Optimization | Checksum: 26fd7c2a0
 
-Time (s): cpu = 00:01:04 ; elapsed = 00:00:27 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23203 ; free virtual = 29515
-Phase 3 Detail Placement | Checksum: 195fd1a0a
+Time (s): cpu = 00:01:48 ; elapsed = 00:00:42 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22287 ; free virtual = 28737
+Phase 3 Detail Placement | Checksum: 26fd7c2a0
 
-Time (s): cpu = 00:01:04 ; elapsed = 00:00:27 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23166 ; free virtual = 29513
+Time (s): cpu = 00:01:48 ; elapsed = 00:00:42 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22287 ; free virtual = 28737
 
 Phase 4 Post Placement Optimization and Clean-Up
 
@@ -527,7 +609,7 @@ Phase 4.1 Post Commit Optimization
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Phase 4.1.1 Post Placement Optimization
-Post Placement Optimization Initialization | Checksum: 1940621ad
+Post Placement Optimization Initialization | Checksum: 1edb65bbe
 
 Phase 4.1.1.1 BUFG Insertion
 
@@ -535,28 +617,28 @@ Starting Physical Synthesis Task
 
 Phase 1 Physical Synthesis Initialization
 INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.445 | TNS=-23.058 |
-Phase 1 Physical Synthesis Initialization | Checksum: 1eb58ca2c
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.122 | TNS=-292.835 |
+Phase 1 Physical Synthesis Initialization | Checksum: 12164609d
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.39 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23168 ; free virtual = 29506
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.55 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22273 ; free virtual = 28723
 INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
-Ending Physical Synthesis Task | Checksum: 23990700a
+Ending Physical Synthesis Task | Checksum: 18e06e829
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.44 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23176 ; free virtual = 29505
-Phase 4.1.1.1 BUFG Insertion | Checksum: 1940621ad
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.62 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22272 ; free virtual = 28722
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1edb65bbe
 
-Time (s): cpu = 00:01:12 ; elapsed = 00:00:29 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23177 ; free virtual = 29505
-INFO: [Place 30-746] Post Placement Timing Summary WNS=-1.019. For the most accurate timing information please run report_timing.
+Time (s): cpu = 00:02:05 ; elapsed = 00:00:46 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22272 ; free virtual = 28722
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-1.855. For the most accurate timing information please run report_timing.
 
-Time (s): cpu = 00:01:40 ; elapsed = 00:00:52 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23160 ; free virtual = 29505
-Phase 4.1 Post Commit Optimization | Checksum: 2001e5025
+Time (s): cpu = 00:02:25 ; elapsed = 00:00:56 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22270 ; free virtual = 28721
+Phase 4.1 Post Commit Optimization | Checksum: 1a384ab80
 
-Time (s): cpu = 00:01:40 ; elapsed = 00:00:52 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23160 ; free virtual = 29505
+Time (s): cpu = 00:02:25 ; elapsed = 00:00:56 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22270 ; free virtual = 28720
 
 Phase 4.2 Post Placement Cleanup
-Phase 4.2 Post Placement Cleanup | Checksum: 2001e5025
+Phase 4.2 Post Placement Cleanup | Checksum: 1a384ab80
 
-Time (s): cpu = 00:01:40 ; elapsed = 00:00:52 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23160 ; free virtual = 29506
+Time (s): cpu = 00:02:25 ; elapsed = 00:00:56 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22270 ; free virtual = 28720
 
 Phase 4.3 Placer Reporting
 
@@ -568,81 +650,89 @@ INFO: [Place 30-612] Post-Placement Estimated Congestion
 |___________|___________________|___________________|
 |      North|                4x4|                4x4|
 |___________|___________________|___________________|
-|      South|                1x1|                2x2|
+|      South|                2x2|                4x4|
 |___________|___________________|___________________|
-|       East|                1x1|                1x1|
+|       East|                1x1|                2x2|
 |___________|___________________|___________________|
 |       West|                1x1|                1x1|
 |___________|___________________|___________________|
 
-Phase 4.3.1 Print Estimated Congestion | Checksum: 2001e5025
+Phase 4.3.1 Print Estimated Congestion | Checksum: 1a384ab80
 
-Time (s): cpu = 00:01:40 ; elapsed = 00:00:52 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23160 ; free virtual = 29506
-Phase 4.3 Placer Reporting | Checksum: 2001e5025
+Time (s): cpu = 00:02:26 ; elapsed = 00:00:56 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22270 ; free virtual = 28720
+Phase 4.3 Placer Reporting | Checksum: 1a384ab80
 
-Time (s): cpu = 00:01:40 ; elapsed = 00:00:52 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23161 ; free virtual = 29506
+Time (s): cpu = 00:02:26 ; elapsed = 00:00:56 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22270 ; free virtual = 28720
 
 Phase 4.4 Final Placement Cleanup
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23161 ; free virtual = 29506
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22270 ; free virtual = 28720
 
-Time (s): cpu = 00:01:40 ; elapsed = 00:00:52 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23161 ; free virtual = 29506
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: 2539274e0
+Time (s): cpu = 00:02:26 ; elapsed = 00:00:56 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22270 ; free virtual = 28720
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1d5fea650
 
-Time (s): cpu = 00:01:40 ; elapsed = 00:00:52 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23161 ; free virtual = 29506
-Ending Placer Task | Checksum: 16c9690a9
+Time (s): cpu = 00:02:26 ; elapsed = 00:00:56 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22270 ; free virtual = 28720
+Ending Placer Task | Checksum: f8f73f08
 
-Time (s): cpu = 00:01:40 ; elapsed = 00:00:52 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23161 ; free virtual = 29506
+Time (s): cpu = 00:02:26 ; elapsed = 00:00:56 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22270 ; free virtual = 28720
 INFO: [Common 17-83] Releasing license: Implementation
-111 Infos, 49 Warnings, 48 Critical Warnings and 0 Errors encountered.
+192 Infos, 49 Warnings, 48 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-place_design: Time (s): cpu = 00:01:43 ; elapsed = 00:00:54 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23190 ; free virtual = 29535
+place_design: Time (s): cpu = 00:02:29 ; elapsed = 00:00:58 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22306 ; free virtual = 28756
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.66 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23145 ; free virtual = 29514
+Write XDEF Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22233 ; free virtual = 28736
 INFO: [Common 17-1381] The checkpoint '/home/duyliontran/xilinx/zturn-driver/zturn-driver.runs/impl_1/zturn_wrapper_placed.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_io -file zturn_wrapper_io_placed.rpt
-report_io: Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.17 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23176 ; free virtual = 29517
+report_io: Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.15 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22284 ; free virtual = 28745
 INFO: [runtcl-4] Executing : report_utilization -file zturn_wrapper_utilization_placed.rpt -pb zturn_wrapper_utilization_placed.pb
 INFO: [runtcl-4] Executing : report_control_sets -verbose -file zturn_wrapper_control_sets_placed.rpt
-report_control_sets: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.14 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23185 ; free virtual = 29525
+report_control_sets: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.15 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22290 ; free virtual = 28752
 Command: phys_opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23162 ; free virtual = 29502
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22263 ; free virtual = 28725
 
 Starting Physical Synthesis Task
 
 Phase 1 Physical Synthesis Initialization
 INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.019 | TNS=-13.689 |
-Phase 1 Physical Synthesis Initialization | Checksum: 1737b12fc
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.855 | TNS=-221.524 |
+Phase 1 Physical Synthesis Initialization | Checksum: 15db882e5
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23176 ; free virtual = 29499
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.019 | TNS=-13.689 |
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:03 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22252 ; free virtual = 28714
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.855 | TNS=-221.524 |
 
 Phase 2 DSP Register Optimization
 INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
 INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
-Phase 2 DSP Register Optimization | Checksum: 1737b12fc
+Phase 2 DSP Register Optimization | Checksum: 15db882e5
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23175 ; free virtual = 29498
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:03 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22252 ; free virtual = 28714
 
 Phase 3 Critical Path Optimization
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.019 | TNS=-13.689 |
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.855 | TNS=-221.524 |
 INFO: [Physopt 32-702] Processed net zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/OP/m_axis_result_tdata[61]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net zturn_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/EXP/STATE_DELAY/i_pipe/RESULT_REG.NORMAL.exp_op_reg[7]_i_1_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/EXP/STATE_DELAY/i_pipe/RESULT_REG.NORMAL.exp_op_reg[3]_i_1_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-735] Processed net zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/EXP/STATE_DELAY/i_pipe/RESULT_REG.NORMAL.exp_op[3]_i_6_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.751 | TNS=-10.741 |
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.454 | TNS=-216.013 |
+INFO: [Physopt 32-702] Processed net zturn_i/multivariate_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U48/multivariate_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/OP/m_axis_result_tdata[61]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net zturn_i/multivariate_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U48/multivariate_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/EXP/STATE_DELAY/i_pipe/RESULT_REG.NORMAL.exp_op_reg[7]_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net zturn_i/multivariate_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U48/multivariate_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/EXP/STATE_DELAY/i_pipe/RESULT_REG.NORMAL.exp_op_reg[3]_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net zturn_i/multivariate_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U48/multivariate_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/EXP/STATE_DELAY/i_pipe/RESULT_REG.NORMAL.exp_op[3]_i_6_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.354 | TNS=-213.747 |
 INFO: [Physopt 32-702] Processed net zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/EXP/STATE_DELAY/i_pipe/RESULT_REG.NORMAL.exp_op[3]_i_6_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-662] Processed net zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/DSP48_E1.DSP_LOGIC_ADDERS.RND_1/i_no_versal_es1_workaround.DSP_0.  Did not re-place instance zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/DSP48_E1.DSP_LOGIC_ADDERS.RND_1/RESULT_REG.NORMAL.exp_op[3]_i_7
 INFO: [Physopt 32-702] Processed net zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/DSP48_E1.DSP_LOGIC_ADDERS.RND_1/i_no_versal_es1_workaround.DSP_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/EXP/STATE_DELAY/i_pipe/exp_pre_op[9]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/RND_BIT_GEN/NORM_1_OR_0.STRUCT_REQ.SPECIAL.RND_CHAIN/B[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/NORM_SHIFT/MUX_LOOP[2].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[54]_0.  Re-placed instance zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/NORM_SHIFT/MUX_LOOP[2].DEL_SHIFT/i_pipe/CHAIN_GEN[0].C_MUX.CARRY_MUX_i_3
+INFO: [Physopt 32-735] Processed net zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/NORM_SHIFT/MUX_LOOP[2].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[54]_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.331 | TNS=-213.494 |
 INFO: [Physopt 32-662] Processed net zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/NORM_SHIFT/MUX_LOOP[2].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[54]_0.  Did not re-place instance zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/NORM_SHIFT/MUX_LOOP[2].DEL_SHIFT/i_pipe/CHAIN_GEN[0].C_MUX.CARRY_MUX_i_3
 INFO: [Physopt 32-702] Processed net zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/NORM_SHIFT/MUX_LOOP[2].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[54]_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/P[46]. Optimizations did not improve timing on the net.
@@ -660,13 +750,13 @@ INFO: [Physopt 32-702] Processed net zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full
 INFO: [Physopt 32-702] Processed net zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/P[46]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-662] Processed net zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/NORM_SHIFT/MUX_LOOP[2].DEL_SHIFT/i_pipe/part_norm_mant_ext[3].  Did not re-place instance zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/NORM_SHIFT/MUX_LOOP[2].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[54]
 INFO: [Physopt 32-702] Processed net zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/NORM_SHIFT/MUX_LOOP[2].DEL_SHIFT/i_pipe/part_norm_mant_ext[3]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.751 | TNS=-10.741 |
-Phase 3 Critical Path Optimization | Checksum: 1737b12fc
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.331 | TNS=-213.494 |
+Phase 3 Critical Path Optimization | Checksum: 15db882e5
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:02 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23185 ; free virtual = 29509
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:04 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22251 ; free virtual = 28713
 
 Phase 4 Critical Path Optimization
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.751 | TNS=-10.741 |
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.331 | TNS=-213.494 |
 INFO: [Physopt 32-702] Processed net zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/OP/m_axis_result_tdata[61]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net zturn_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/EXP/STATE_DELAY/i_pipe/RESULT_REG.NORMAL.exp_op_reg[7]_i_1_n_0. Optimizations did not improve timing on the net.
@@ -693,12 +783,12 @@ INFO: [Physopt 32-702] Processed net zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full
 INFO: [Physopt 32-702] Processed net zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/P[46]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-662] Processed net zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/NORM_SHIFT/MUX_LOOP[2].DEL_SHIFT/i_pipe/part_norm_mant_ext[3].  Did not re-place instance zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/NORM_SHIFT/MUX_LOOP[2].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[54]
 INFO: [Physopt 32-702] Processed net zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/NORM_SHIFT/MUX_LOOP[2].DEL_SHIFT/i_pipe/part_norm_mant_ext[3]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.751 | TNS=-10.741 |
-Phase 4 Critical Path Optimization | Checksum: 1737b12fc
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.331 | TNS=-213.494 |
+Phase 4 Critical Path Optimization | Checksum: 15db882e5
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:03 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23186 ; free virtual = 29511
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23187 ; free virtual = 29511
-INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-0.751 | TNS=-10.741 |
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:04 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22251 ; free virtual = 28713
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22251 ; free virtual = 28713
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-1.331 | TNS=-213.494 |
 
 Summary of Physical Synthesis Optimizations
 ============================================
@@ -708,24 +798,25 @@ Summary of Physical Synthesis Optimizations
 |  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 |  DSP Register   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
-|  Critical Path  |          0.268  |          2.948  |            0  |              0  |                     1  |           0  |           2  |  00:00:01  |
-|  Total          |          0.268  |          2.948  |            0  |              0  |                     1  |           0  |           3  |  00:00:01  |
+|  Critical Path  |          0.524  |          8.030  |            0  |              0  |                     3  |           0  |           2  |  00:00:01  |
+|  Total          |          0.524  |          8.030  |            0  |              0  |                     3  |           0  |           3  |  00:00:01  |
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23187 ; free virtual = 29511
-Ending Physical Synthesis Task | Checksum: 250c0c25d
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22251 ; free virtual = 28713
+Ending Physical Synthesis Task | Checksum: 159edc1f6
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:03 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23187 ; free virtual = 29511
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:04 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22251 ; free virtual = 28713
 INFO: [Common 17-83] Releasing license: Implementation
-182 Infos, 49 Warnings, 48 Critical Warnings and 0 Errors encountered.
+271 Infos, 49 Warnings, 48 Critical Warnings and 0 Errors encountered.
 phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:07 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22262 ; free virtual = 28724
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.63 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23157 ; free virtual = 29505
+Write XDEF Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22193 ; free virtual = 28705
 INFO: [Common 17-1381] The checkpoint '/home/duyliontran/xilinx/zturn-driver/zturn-driver.runs/impl_1/zturn_wrapper_physopt.dcp' has been generated.
 Command: route_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
@@ -738,41 +829,41 @@ INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more in
 
 Starting Routing Task
 INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
-Checksum: PlaceDB: a47fd5c4 ConstDB: 0 ShapeSum: ad4ba1b1 RouteDB: 0
+Checksum: PlaceDB: a6872120 ConstDB: 0 ShapeSum: 93b12fce RouteDB: 0
 
 Phase 1 Build RT Design
-Phase 1 Build RT Design | Checksum: 17505b62b
+Phase 1 Build RT Design | Checksum: 12e83e1f1
 
-Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23053 ; free virtual = 29383
-Post Restoration Checksum: NetGraph: dd9d0834 NumContArr: 9768adf7 Constraints: 0 Timing: 0
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:12 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22113 ; free virtual = 28587
+Post Restoration Checksum: NetGraph: 6b8db2a0 NumContArr: c2f62f51 Constraints: 0 Timing: 0
 
 Phase 2 Router Initialization
 
 Phase 2.1 Create Timer
-Phase 2.1 Create Timer | Checksum: 17505b62b
+Phase 2.1 Create Timer | Checksum: 12e83e1f1
 
-Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23056 ; free virtual = 29387
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:12 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22117 ; free virtual = 28591
 
 Phase 2.2 Fix Topology Constraints
-Phase 2.2 Fix Topology Constraints | Checksum: 17505b62b
+Phase 2.2 Fix Topology Constraints | Checksum: 12e83e1f1
 
-Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23021 ; free virtual = 29352
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:12 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22080 ; free virtual = 28553
 
 Phase 2.3 Pre Route Cleanup
-Phase 2.3 Pre Route Cleanup | Checksum: 17505b62b
+Phase 2.3 Pre Route Cleanup | Checksum: 12e83e1f1
 
-Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23021 ; free virtual = 29353
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:13 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22080 ; free virtual = 28553
  Number of Nodes with overlaps = 0
 
 Phase 2.4 Update Timing
-Phase 2.4 Update Timing | Checksum: 1fe505811
+Phase 2.4 Update Timing | Checksum: 1b3f886f1
 
-Time (s): cpu = 00:00:27 ; elapsed = 00:00:17 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23005 ; free virtual = 29337
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.847 | TNS=-11.577| WHS=-0.241 | THS=-124.912|
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:17 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22058 ; free virtual = 28531
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.427 | TNS=-232.291| WHS=-0.241 | THS=-189.838|
 
-Phase 2 Router Initialization | Checksum: 1a290e24b
+Phase 2 Router Initialization | Checksum: 15d0c1c44
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:18 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23012 ; free virtual = 29342
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:19 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22056 ; free virtual = 28529
 
 Router Utilization Summary
   Global Vertical Routing Utilization    = 0 %
@@ -780,9 +871,9 @@ Router Utilization Summary
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
-  Number of Failed Nets               = 15758
+  Number of Failed Nets               = 35068
     (Failed Nets is the sum of unrouted and partially routed nets)
-  Number of Unrouted Nets             = 15757
+  Number of Unrouted Nets             = 35067
   Number of Partially Routed Nets     = 1
   Number of Node Overlaps             = 0
 
@@ -790,94 +881,106 @@ Router Utilization Summary
 Phase 3 Initial Routing
 
 Phase 3.1 Global Routing
-Phase 3.1 Global Routing | Checksum: 1a290e24b
+Phase 3.1 Global Routing | Checksum: 15d0c1c44
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:18 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 23011 ; free virtual = 29341
-Phase 3 Initial Routing | Checksum: 966e5c66
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:19 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22050 ; free virtual = 28524
+Phase 3 Initial Routing | Checksum: 10bcc7a88
 
-Time (s): cpu = 00:00:35 ; elapsed = 00:00:19 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 22999 ; free virtual = 29330
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:21 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22047 ; free virtual = 28520
+INFO: [Route 35-580] Design has 5 pins with tight setup and hold constraints.
+
+The top 5 pins with tight setup and hold constraints:
+
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|               clk_fpga_0 |               clk_fpga_0 |zturn_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[7]/D|
+|               clk_fpga_0 |               clk_fpga_0 |zturn_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[6]/D|
+|               clk_fpga_0 |               clk_fpga_0 |zturn_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[5]/D|
+|               clk_fpga_0 |               clk_fpga_0 |                                                         zturn_i/multivariate_0/inst/tmp_reg_302_reg[49]/D|
+|               clk_fpga_0 |               clk_fpga_0 |zturn_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/cmd_translator_0/incr_cmd_0/axaddr_incr_reg[4]/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+
+File with complete list of pins: tight_setup_hold_pins.txt
+
 
 Phase 4 Rip-up And Reroute
 
 Phase 4.1 Global Iteration 0
- Number of Nodes with overlaps = 1304
- Number of Nodes with overlaps = 463
- Number of Nodes with overlaps = 249
- Number of Nodes with overlaps = 124
- Number of Nodes with overlaps = 79
- Number of Nodes with overlaps = 55
- Number of Nodes with overlaps = 31
- Number of Nodes with overlaps = 11
- Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1874
+ Number of Nodes with overlaps = 419
+ Number of Nodes with overlaps = 139
+ Number of Nodes with overlaps = 59
+ Number of Nodes with overlaps = 18
  Number of Nodes with overlaps = 7
  Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.849 | TNS=-16.116| WHS=N/A    | THS=N/A    |
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.489 | TNS=-441.650| WHS=N/A    | THS=N/A    |
 
-Phase 4.1 Global Iteration 0 | Checksum: 29b3dea9d
+Phase 4.1 Global Iteration 0 | Checksum: 1c95a5eb8
 
-Time (s): cpu = 00:00:56 ; elapsed = 00:00:32 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 22987 ; free virtual = 29327
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:33 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22043 ; free virtual = 28516
 
 Phase 4.2 Global Iteration 1
- Number of Nodes with overlaps = 7
- Number of Nodes with overlaps = 5
- Number of Nodes with overlaps = 3
- Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 18
+ Number of Nodes with overlaps = 30
+ Number of Nodes with overlaps = 19
+ Number of Nodes with overlaps = 17
  Number of Nodes with overlaps = 1
  Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.849 | TNS=-15.063| WHS=N/A    | THS=N/A    |
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.491 | TNS=-445.077| WHS=N/A    | THS=N/A    |
 
-Phase 4.2 Global Iteration 1 | Checksum: 1597bc0c2
+Phase 4.2 Global Iteration 1 | Checksum: 85374583
 
-Time (s): cpu = 00:00:58 ; elapsed = 00:00:33 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 22988 ; free virtual = 29327
-Phase 4 Rip-up And Reroute | Checksum: 1597bc0c2
+Time (s): cpu = 00:01:15 ; elapsed = 00:00:35 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22045 ; free virtual = 28519
+Phase 4 Rip-up And Reroute | Checksum: 85374583
 
-Time (s): cpu = 00:00:58 ; elapsed = 00:00:33 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 22987 ; free virtual = 29327
+Time (s): cpu = 00:01:15 ; elapsed = 00:00:35 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22045 ; free virtual = 28519
 
 Phase 5 Delay and Skew Optimization
 
 Phase 5.1 Delay CleanUp
 
 Phase 5.1.1 Update Timing
-Phase 5.1.1 Update Timing | Checksum: 14fe6c111
+Phase 5.1.1 Update Timing | Checksum: cfeda2f5
 
-Time (s): cpu = 00:01:00 ; elapsed = 00:00:33 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 22982 ; free virtual = 29327
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.718 | TNS=-11.611| WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:01:18 ; elapsed = 00:00:36 . Memory (MB): peak = 3541.383 ; gain = 0.000 ; free physical = 22045 ; free virtual = 28519
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.358 | TNS=-329.045| WHS=N/A    | THS=N/A    |
 
  Number of Nodes with overlaps = 0
-Phase 5.1 Delay CleanUp | Checksum: ff05edfa
+Phase 5.1 Delay CleanUp | Checksum: 1ce14d8fc
 
-Time (s): cpu = 00:01:00 ; elapsed = 00:00:33 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 22982 ; free virtual = 29327
+Time (s): cpu = 00:01:21 ; elapsed = 00:00:37 . Memory (MB): peak = 3600.656 ; gain = 59.273 ; free physical = 22013 ; free virtual = 28486
 
 Phase 5.2 Clock Skew Optimization
-Phase 5.2 Clock Skew Optimization | Checksum: ff05edfa
+Phase 5.2 Clock Skew Optimization | Checksum: 1ce14d8fc
 
-Time (s): cpu = 00:01:00 ; elapsed = 00:00:33 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 22982 ; free virtual = 29327
-Phase 5 Delay and Skew Optimization | Checksum: ff05edfa
+Time (s): cpu = 00:01:21 ; elapsed = 00:00:37 . Memory (MB): peak = 3600.656 ; gain = 59.273 ; free physical = 22013 ; free virtual = 28486
+Phase 5 Delay and Skew Optimization | Checksum: 1ce14d8fc
 
-Time (s): cpu = 00:01:00 ; elapsed = 00:00:33 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 22978 ; free virtual = 29327
+Time (s): cpu = 00:01:21 ; elapsed = 00:00:37 . Memory (MB): peak = 3600.656 ; gain = 59.273 ; free physical = 22013 ; free virtual = 28486
 
 Phase 6 Post Hold Fix
 
 Phase 6.1 Hold Fix Iter
 
 Phase 6.1.1 Update Timing
-Phase 6.1.1 Update Timing | Checksum: ede86359
+Phase 6.1.1 Update Timing | Checksum: 1c9d42019
 
-Time (s): cpu = 00:01:02 ; elapsed = 00:00:34 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 22979 ; free virtual = 29328
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.718 | TNS=-11.684| WHS=0.020  | THS=0.000  |
+Time (s): cpu = 00:01:25 ; elapsed = 00:00:38 . Memory (MB): peak = 3600.656 ; gain = 59.273 ; free physical = 22015 ; free virtual = 28489
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.358 | TNS=-264.596| WHS=0.008  | THS=0.000  |
 
-Phase 6.1 Hold Fix Iter | Checksum: 1b21e7d86
+Phase 6.1 Hold Fix Iter | Checksum: 1b4b73b0e
 
-Time (s): cpu = 00:01:02 ; elapsed = 00:00:34 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 22979 ; free virtual = 29328
-Phase 6 Post Hold Fix | Checksum: 1b21e7d86
+Time (s): cpu = 00:01:25 ; elapsed = 00:00:38 . Memory (MB): peak = 3600.656 ; gain = 59.273 ; free physical = 22015 ; free virtual = 28489
+Phase 6 Post Hold Fix | Checksum: 1b4b73b0e
 
-Time (s): cpu = 00:01:02 ; elapsed = 00:00:34 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 22979 ; free virtual = 29328
+Time (s): cpu = 00:01:25 ; elapsed = 00:00:38 . Memory (MB): peak = 3600.656 ; gain = 59.273 ; free physical = 22015 ; free virtual = 28489
 
 Phase 7 Route finalize
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 3.11934 %
-  Global Horizontal Routing Utilization  = 3.05688 %
+  Global Vertical Routing Utilization    = 9.02682 %
+  Global Horizontal Routing Utilization  = 10.7636 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
@@ -888,10 +991,10 @@ Router Utilization Summary
   Number of Node Overlaps             = 0
 
 Congestion Report
-North Dir 1x1 Area, Max Cong = 62.1622%, No Congested Regions.
-South Dir 1x1 Area, Max Cong = 65.7658%, No Congested Regions.
-East Dir 1x1 Area, Max Cong = 64.7059%, No Congested Regions.
-West Dir 1x1 Area, Max Cong = 70.5882%, No Congested Regions.
+North Dir 1x1 Area, Max Cong = 83.7838%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 77.4775%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 73.5294%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 75%, No Congested Regions.
 
 ------------------------------
 Reporting congestion hotspots
@@ -913,46 +1016,47 @@ Direction: West
 Congested clusters found at Level 0
 Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
 
-Phase 7 Route finalize | Checksum: 1c6c35094
+Phase 7 Route finalize | Checksum: 1941dc778
 
-Time (s): cpu = 00:01:02 ; elapsed = 00:00:34 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 22979 ; free virtual = 29328
+Time (s): cpu = 00:01:26 ; elapsed = 00:00:39 . Memory (MB): peak = 3600.656 ; gain = 59.273 ; free physical = 22014 ; free virtual = 28487
 
 Phase 8 Verifying routed nets
 
  Verification completed successfully
-Phase 8 Verifying routed nets | Checksum: 1c6c35094
+Phase 8 Verifying routed nets | Checksum: 1941dc778
 
-Time (s): cpu = 00:01:02 ; elapsed = 00:00:34 . Memory (MB): peak = 3420.715 ; gain = 0.000 ; free physical = 22977 ; free virtual = 29326
+Time (s): cpu = 00:01:26 ; elapsed = 00:00:39 . Memory (MB): peak = 3600.656 ; gain = 59.273 ; free physical = 22013 ; free virtual = 28487
 
 Phase 9 Depositing Routes
-Phase 9 Depositing Routes | Checksum: 1081226ed
+Phase 9 Depositing Routes | Checksum: 23f5d2045
 
-Time (s): cpu = 00:01:03 ; elapsed = 00:00:35 . Memory (MB): peak = 3434.551 ; gain = 13.836 ; free physical = 22979 ; free virtual = 29326
+Time (s): cpu = 00:01:27 ; elapsed = 00:00:40 . Memory (MB): peak = 3632.672 ; gain = 91.289 ; free physical = 22013 ; free virtual = 28487
 
 Phase 10 Post Router Timing
-INFO: [Route 35-57] Estimated Timing Summary | WNS=-0.718 | TNS=-11.684| WHS=0.020  | THS=0.000  |
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-1.358 | TNS=-264.596| WHS=0.008  | THS=0.000  |
 
 WARNING: [Route 35-328] Router estimated timing not met.
 Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
-Phase 10 Post Router Timing | Checksum: 1081226ed
+Phase 10 Post Router Timing | Checksum: 23f5d2045
 
-Time (s): cpu = 00:01:03 ; elapsed = 00:00:35 . Memory (MB): peak = 3434.551 ; gain = 13.836 ; free physical = 22979 ; free virtual = 29326
+Time (s): cpu = 00:01:28 ; elapsed = 00:00:40 . Memory (MB): peak = 3632.672 ; gain = 91.289 ; free physical = 22017 ; free virtual = 28490
 INFO: [Route 35-16] Router Completed Successfully
 
-Time (s): cpu = 00:01:03 ; elapsed = 00:00:35 . Memory (MB): peak = 3434.551 ; gain = 13.836 ; free physical = 23021 ; free virtual = 29369
+Time (s): cpu = 00:01:28 ; elapsed = 00:00:40 . Memory (MB): peak = 3632.672 ; gain = 91.289 ; free physical = 22099 ; free virtual = 28573
 
 Routing Is Done.
 INFO: [Common 17-83] Releasing license: Implementation
-197 Infos, 50 Warnings, 48 Critical Warnings and 0 Errors encountered.
+287 Infos, 50 Warnings, 48 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:01:12 ; elapsed = 00:00:37 . Memory (MB): peak = 3434.551 ; gain = 13.836 ; free physical = 23021 ; free virtual = 29369
+route_design: Time (s): cpu = 00:01:42 ; elapsed = 00:00:43 . Memory (MB): peak = 3632.672 ; gain = 91.289 ; free physical = 22099 ; free virtual = 28573
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.64 . Memory (MB): peak = 3434.551 ; gain = 0.000 ; free physical = 22982 ; free virtual = 29358
+Write XDEF Complete: Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 3632.672 ; gain = 0.000 ; free physical = 22018 ; free virtual = 28553
 INFO: [Common 17-1381] The checkpoint '/home/duyliontran/xilinx/zturn-driver/zturn-driver.runs/impl_1/zturn_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 3632.672 ; gain = 0.000 ; free physical = 22084 ; free virtual = 28572
 INFO: [runtcl-4] Executing : report_drc -file zturn_wrapper_drc_routed.rpt -pb zturn_wrapper_drc_routed.pb -rpx zturn_wrapper_drc_routed.rpx
 Command: report_drc -file zturn_wrapper_drc_routed.rpt -pb zturn_wrapper_drc_routed.pb -rpx zturn_wrapper_drc_routed.rpx
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
@@ -971,8 +1075,9 @@ INFO: [Timing 38-35] Done setting XDC timing constraints.
 Running Vector-less Activity Propagation...
 
 Finished Running Vector-less Activity Propagation
-209 Infos, 50 Warnings, 48 Critical Warnings and 0 Errors encountered.
+299 Infos, 50 Warnings, 48 Critical Warnings and 0 Errors encountered.
 report_power completed successfully
+report_power: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 3700.520 ; gain = 11.820 ; free physical = 22017 ; free virtual = 28517
 INFO: [runtcl-4] Executing : report_route_status -file zturn_wrapper_route_status.rpt -pb zturn_wrapper_route_status.pb
 INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file zturn_wrapper_timing_summary_routed.rpt -pb zturn_wrapper_timing_summary_routed.pb -rpx zturn_wrapper_timing_summary_routed.rpx -warn_on_violation 
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
@@ -990,6 +1095,22 @@ INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc
 Running DRC as a precondition to command write_bitstream
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
 INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC DPIP-1] Input pipelining: DSP zturn_i/multivariate_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U48/multivariate_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/i_no_versal_es1_workaround.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP input zturn_i/multivariate_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U48/multivariate_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/i_no_versal_es1_workaround.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP zturn_i/multivariate_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U48/multivariate_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/i_no_versal_es1_workaround.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP input zturn_i/multivariate_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U48/multivariate_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/i_no_versal_es1_workaround.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP zturn_i/multivariate_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U48/multivariate_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/i_no_versal_es1_workaround.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP input zturn_i/multivariate_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U48/multivariate_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/i_no_versal_es1_workaround.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP zturn_i/multivariate_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U48/multivariate_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP input zturn_i/multivariate_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U48/multivariate_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP zturn_i/multivariate_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U48/multivariate_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP input zturn_i/multivariate_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U48/multivariate_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP zturn_i/multivariate_0/inst/dmul_64ns_64ns_64_7_max_dsp_1_U49/multivariate_ap_dmul_5_max_dsp_64_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP0/i_no_versal_es1_workaround.DSP input zturn_i/multivariate_0/inst/dmul_64ns_64ns_64_7_max_dsp_1_U49/multivariate_ap_dmul_5_max_dsp_64_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP0/i_no_versal_es1_workaround.DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP zturn_i/multivariate_0/inst/dmul_64ns_64ns_64_7_max_dsp_1_U49/multivariate_ap_dmul_5_max_dsp_64_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP1/i_no_versal_es1_workaround.DSP input zturn_i/multivariate_0/inst/dmul_64ns_64ns_64_7_max_dsp_1_U49/multivariate_ap_dmul_5_max_dsp_64_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP1/i_no_versal_es1_workaround.DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP zturn_i/multivariate_0/inst/dmul_64ns_64ns_64_7_max_dsp_1_U49/multivariate_ap_dmul_5_max_dsp_64_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP2/i_no_versal_es1_workaround.DSP input zturn_i/multivariate_0/inst/dmul_64ns_64ns_64_7_max_dsp_1_U49/multivariate_ap_dmul_5_max_dsp_64_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP2/i_no_versal_es1_workaround.DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP zturn_i/multivariate_0/inst/dmul_64ns_64ns_64_7_max_dsp_1_U49/multivariate_ap_dmul_5_max_dsp_64_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP input zturn_i/multivariate_0/inst/dmul_64ns_64ns_64_7_max_dsp_1_U49/multivariate_ap_dmul_5_max_dsp_64_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP zturn_i/multivariate_0/inst/dmul_64ns_64ns_64_7_max_dsp_1_U49/multivariate_ap_dmul_5_max_dsp_64_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP input zturn_i/multivariate_0/inst/dmul_64ns_64ns_64_7_max_dsp_1_U49/multivariate_ap_dmul_5_max_dsp_64_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mac_muladd_16s_16ns_19s_31_4_1_U17/multivariate_mac_muladd_16s_16ns_19s_31_4_1_DSP48_0_U/p_reg_reg input zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mac_muladd_16s_16ns_19s_31_4_1_U17/multivariate_mac_muladd_16s_16ns_19s_31_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/multivariate_mul_40ns_40ns_80_2_1_Multiplier_9_U/p_reg input zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/multivariate_mul_40ns_40ns_80_2_1_Multiplier_9_U/p_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/multivariate_mul_40ns_40ns_80_2_1_Multiplier_9_U/p_reg input zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/multivariate_mul_40ns_40ns_80_2_1_Multiplier_9_U/p_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/multivariate_mul_40ns_40ns_80_2_1_Multiplier_9_U/p_reg__0 input zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/multivariate_mul_40ns_40ns_80_2_1_Multiplier_9_U/p_reg__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/multivariate_mul_40ns_40ns_80_2_1_Multiplier_9_U/p_reg__0 input zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/multivariate_mul_40ns_40ns_80_2_1_Multiplier_9_U/p_reg__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/multivariate_mul_40ns_40ns_80_2_1_Multiplier_9_U/p_reg__1 input zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/multivariate_mul_40ns_40ns_80_2_1_Multiplier_9_U/p_reg__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 WARNING: [DRC DPIP-1] Input pipelining: DSP zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/i_no_versal_es1_workaround.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP input zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/i_no_versal_es1_workaround.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 WARNING: [DRC DPIP-1] Input pipelining: DSP zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/i_no_versal_es1_workaround.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP input zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/i_no_versal_es1_workaround.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 WARNING: [DRC DPIP-1] Input pipelining: DSP zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/i_no_versal_es1_workaround.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP input zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/i_no_versal_es1_workaround.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
@@ -1001,6 +1122,48 @@ WARNING: [DRC DPIP-1] Input pipelining: DSP zturn_i/pnq_0/inst/grp_pow_generic_d
 WARNING: [DRC DPIP-1] Input pipelining: DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/pnq_mul_40ns_40ns_80_2_1_Multiplier_9_U/p_reg__0 input zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/pnq_mul_40ns_40ns_80_2_1_Multiplier_9_U/p_reg__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 WARNING: [DRC DPIP-1] Input pipelining: DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/pnq_mul_40ns_40ns_80_2_1_Multiplier_9_U/p_reg__0 input zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/pnq_mul_40ns_40ns_80_2_1_Multiplier_9_U/p_reg__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 WARNING: [DRC DPIP-1] Input pipelining: DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/pnq_mul_40ns_40ns_80_2_1_Multiplier_9_U/p_reg__1 input zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/pnq_mul_40ns_40ns_80_2_1_Multiplier_9_U/p_reg__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/pnq_mul_40ns_40ns_80_2_1_Multiplier_9_U/p_reg__1 input zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/pnq_mul_40ns_40ns_80_2_1_Multiplier_9_U/p_reg__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/pnq_mul_40ns_40ns_80_2_1_Multiplier_9_U/tmp_product input zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/pnq_mul_40ns_40ns_80_2_1_Multiplier_9_U/tmp_product/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/pnq_mul_40ns_40ns_80_2_1_Multiplier_9_U/tmp_product__0 input zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/pnq_mul_40ns_40ns_80_2_1_Multiplier_9_U/tmp_product__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/pnq_mul_40ns_40ns_80_2_1_Multiplier_9_U/tmp_product__0 input zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/pnq_mul_40ns_40ns_80_2_1_Multiplier_9_U/tmp_product__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zturn_i/multivariate_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U48/multivariate_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/i_no_versal_es1_workaround.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP output zturn_i/multivariate_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U48/multivariate_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/i_no_versal_es1_workaround.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zturn_i/multivariate_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U48/multivariate_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP output zturn_i/multivariate_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U48/multivariate_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zturn_i/multivariate_0/inst/dmul_64ns_64ns_64_7_max_dsp_1_U49/multivariate_ap_dmul_5_max_dsp_64_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP0/i_no_versal_es1_workaround.DSP output zturn_i/multivariate_0/inst/dmul_64ns_64ns_64_7_max_dsp_1_U49/multivariate_ap_dmul_5_max_dsp_64_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP0/i_no_versal_es1_workaround.DSP/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zturn_i/multivariate_0/inst/dmul_64ns_64ns_64_7_max_dsp_1_U49/multivariate_ap_dmul_5_max_dsp_64_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP2/i_no_versal_es1_workaround.DSP output zturn_i/multivariate_0/inst/dmul_64ns_64ns_64_7_max_dsp_1_U49/multivariate_ap_dmul_5_max_dsp_64_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP2/i_no_versal_es1_workaround.DSP/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zturn_i/multivariate_0/inst/dmul_64ns_64ns_64_7_max_dsp_1_U49/multivariate_ap_dmul_5_max_dsp_64_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP5/i_no_versal_es1_workaround.DSP output zturn_i/multivariate_0/inst/dmul_64ns_64ns_64_7_max_dsp_1_U49/multivariate_ap_dmul_5_max_dsp_64_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP5/i_no_versal_es1_workaround.DSP/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zturn_i/multivariate_0/inst/dmul_64ns_64ns_64_7_max_dsp_1_U49/multivariate_ap_dmul_5_max_dsp_64_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP8/i_no_versal_es1_workaround.DSP output zturn_i/multivariate_0/inst/dmul_64ns_64ns_64_7_max_dsp_1_U49/multivariate_ap_dmul_5_max_dsp_64_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP8/i_no_versal_es1_workaround.DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zturn_i/multivariate_0/inst/dmul_64ns_64ns_64_7_max_dsp_1_U49/multivariate_ap_dmul_5_max_dsp_64_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/FULL_MAX_USAGE.DSP9/i_no_versal_es1_workaround.DSP output zturn_i/multivariate_0/inst/dmul_64ns_64ns_64_7_max_dsp_1_U49/multivariate_ap_dmul_5_max_dsp_64_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/FULL_MAX_USAGE.DSP9/i_no_versal_es1_workaround.DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zturn_i/multivariate_0/inst/dmul_64ns_64ns_64_7_max_dsp_1_U49/multivariate_ap_dmul_5_max_dsp_64_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP output zturn_i/multivariate_0/inst/dmul_64ns_64ns_64_7_max_dsp_1_U49/multivariate_ap_dmul_5_max_dsp_64_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_12s_80ns_90_5_1_U9/multivariate_mul_12s_80ns_90_5_1_Multiplier_8_U/tmp_product output zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_12s_80ns_90_5_1_U9/multivariate_mul_12s_80ns_90_5_1_Multiplier_8_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_12s_80ns_90_5_1_U9/multivariate_mul_12s_80ns_90_5_1_Multiplier_8_U/tmp_product__0 output zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_12s_80ns_90_5_1_U9/multivariate_mul_12s_80ns_90_5_1_Multiplier_8_U/tmp_product__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_13s_71s_71_5_1_U13/multivariate_mul_13s_71s_71_5_1_Multiplier_12_U/tmp_product output zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_13s_71s_71_5_1_U13/multivariate_mul_13s_71s_71_5_1_Multiplier_12_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/multivariate_mul_40ns_40ns_80_2_1_Multiplier_9_U/tmp_product output zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/multivariate_mul_40ns_40ns_80_2_1_Multiplier_9_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/multivariate_mul_40ns_40ns_80_2_1_Multiplier_9_U/tmp_product__0 output zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/multivariate_mul_40ns_40ns_80_2_1_Multiplier_9_U/tmp_product__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_43ns_36ns_79_3_1_U14/multivariate_mul_43ns_36ns_79_3_1_Multiplier_13_U/tmp_product output zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_43ns_36ns_79_3_1_U14/multivariate_mul_43ns_36ns_79_3_1_Multiplier_13_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_43ns_36ns_79_3_1_U14/multivariate_mul_43ns_36ns_79_3_1_Multiplier_13_U/tmp_product__0 output zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_43ns_36ns_79_3_1_U14/multivariate_mul_43ns_36ns_79_3_1_Multiplier_13_U/tmp_product__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_43ns_36ns_79_3_1_U14/multivariate_mul_43ns_36ns_79_3_1_Multiplier_13_U/tmp_product__1 output zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_43ns_36ns_79_3_1_U14/multivariate_mul_43ns_36ns_79_3_1_Multiplier_13_U/tmp_product__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_49ns_44ns_93_5_1_U15/multivariate_mul_49ns_44ns_93_5_1_Multiplier_14_U/tmp_product output zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_49ns_44ns_93_5_1_U15/multivariate_mul_49ns_44ns_93_5_1_Multiplier_14_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_50ns_50ns_100_5_1_U16/multivariate_mul_50ns_50ns_100_5_1_Multiplier_15_U/tmp_product output zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_50ns_50ns_100_5_1_U16/multivariate_mul_50ns_50ns_100_5_1_Multiplier_15_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_71ns_4ns_75_5_1_U2/multivariate_mul_71ns_4ns_75_5_1_Multiplier_1_U/tmp_product output zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_71ns_4ns_75_5_1_U2/multivariate_mul_71ns_4ns_75_5_1_Multiplier_1_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_73ns_6ns_79_5_1_U3/multivariate_mul_73ns_6ns_79_5_1_Multiplier_2_U/tmp_product output zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_73ns_6ns_79_5_1_U3/multivariate_mul_73ns_6ns_79_5_1_Multiplier_2_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77ns_6ns_83_5_1_U8/multivariate_mul_77ns_6ns_83_5_1_Multiplier_7_U/tmp_product output zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77ns_6ns_83_5_1_U8/multivariate_mul_77ns_6ns_83_5_1_Multiplier_7_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77ns_6ns_83_5_1_U8/multivariate_mul_77ns_6ns_83_5_1_Multiplier_7_U/tmp_product__0 output zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77ns_6ns_83_5_1_U8/multivariate_mul_77ns_6ns_83_5_1_Multiplier_7_U/tmp_product__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77s_54ns_130_5_1_U11/multivariate_mul_77s_54ns_130_5_1_Multiplier_10_U/buff1_reg__1 output zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77s_54ns_130_5_1_U11/multivariate_mul_77s_54ns_130_5_1_Multiplier_10_U/buff1_reg__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77s_54ns_130_5_1_U11/multivariate_mul_77s_54ns_130_5_1_Multiplier_10_U/buff1_reg__2 output zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77s_54ns_130_5_1_U11/multivariate_mul_77s_54ns_130_5_1_Multiplier_10_U/buff1_reg__2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77s_54ns_130_5_1_U11/multivariate_mul_77s_54ns_130_5_1_Multiplier_10_U/buff1_reg__3 output zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77s_54ns_130_5_1_U11/multivariate_mul_77s_54ns_130_5_1_Multiplier_10_U/buff1_reg__3/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77s_54ns_130_5_1_U11/multivariate_mul_77s_54ns_130_5_1_Multiplier_10_U/tmp_product output zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77s_54ns_130_5_1_U11/multivariate_mul_77s_54ns_130_5_1_Multiplier_10_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77s_55ns_130_5_1_U12/multivariate_mul_77s_55ns_130_5_1_Multiplier_11_U/buff1_reg__1 output zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77s_55ns_130_5_1_U12/multivariate_mul_77s_55ns_130_5_1_Multiplier_11_U/buff1_reg__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77s_55ns_130_5_1_U12/multivariate_mul_77s_55ns_130_5_1_Multiplier_11_U/buff1_reg__2 output zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77s_55ns_130_5_1_U12/multivariate_mul_77s_55ns_130_5_1_Multiplier_11_U/buff1_reg__2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77s_55ns_130_5_1_U12/multivariate_mul_77s_55ns_130_5_1_Multiplier_11_U/buff1_reg__3 output zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77s_55ns_130_5_1_U12/multivariate_mul_77s_55ns_130_5_1_Multiplier_11_U/buff1_reg__3/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77s_55ns_130_5_1_U12/multivariate_mul_77s_55ns_130_5_1_Multiplier_11_U/tmp_product output zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77s_55ns_130_5_1_U12/multivariate_mul_77s_55ns_130_5_1_Multiplier_11_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_82ns_6ns_88_5_1_U7/multivariate_mul_82ns_6ns_88_5_1_Multiplier_6_U/tmp_product output zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_82ns_6ns_88_5_1_U7/multivariate_mul_82ns_6ns_88_5_1_Multiplier_6_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_82ns_6ns_88_5_1_U7/multivariate_mul_82ns_6ns_88_5_1_Multiplier_6_U/tmp_product__0 output zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_82ns_6ns_88_5_1_U7/multivariate_mul_82ns_6ns_88_5_1_Multiplier_6_U/tmp_product__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_83ns_6ns_89_5_1_U4/multivariate_mul_83ns_6ns_89_5_1_Multiplier_3_U/tmp_product output zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_83ns_6ns_89_5_1_U4/multivariate_mul_83ns_6ns_89_5_1_Multiplier_3_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_83ns_6ns_89_5_1_U4/multivariate_mul_83ns_6ns_89_5_1_Multiplier_3_U/tmp_product__0 output zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_83ns_6ns_89_5_1_U4/multivariate_mul_83ns_6ns_89_5_1_Multiplier_3_U/tmp_product__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_87ns_6ns_93_5_1_U6/multivariate_mul_87ns_6ns_93_5_1_Multiplier_5_U/tmp_product output zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_87ns_6ns_93_5_1_U6/multivariate_mul_87ns_6ns_93_5_1_Multiplier_5_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_87ns_6ns_93_5_1_U6/multivariate_mul_87ns_6ns_93_5_1_Multiplier_5_U/tmp_product__0 output zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_87ns_6ns_93_5_1_U6/multivariate_mul_87ns_6ns_93_5_1_Multiplier_5_U/tmp_product__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_92ns_6ns_98_5_1_U5/multivariate_mul_92ns_6ns_98_5_1_Multiplier_4_U/tmp_product output zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_92ns_6ns_98_5_1_U5/multivariate_mul_92ns_6ns_98_5_1_Multiplier_4_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_92ns_6ns_98_5_1_U5/multivariate_mul_92ns_6ns_98_5_1_Multiplier_4_U/tmp_product__0 output zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_92ns_6ns_98_5_1_U5/multivariate_mul_92ns_6ns_98_5_1_Multiplier_4_U/tmp_product__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/i_no_versal_es1_workaround.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP output zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/i_no_versal_es1_workaround.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP output zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_12s_80ns_90_5_1_U9/pnq_mul_12s_80ns_90_5_1_Multiplier_8_U/tmp_product output zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_12s_80ns_90_5_1_U9/pnq_mul_12s_80ns_90_5_1_Multiplier_8_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
@@ -1025,6 +1188,32 @@ WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zturn_i/pnq_0/inst/grp_pow_gen
 WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_87ns_6ns_93_5_1_U6/pnq_mul_87ns_6ns_93_5_1_Multiplier_5_U/tmp_product__0 output zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_87ns_6ns_93_5_1_U6/pnq_mul_87ns_6ns_93_5_1_Multiplier_5_U/tmp_product__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_92ns_6ns_98_5_1_U5/pnq_mul_92ns_6ns_98_5_1_Multiplier_4_U/tmp_product output zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_92ns_6ns_98_5_1_U5/pnq_mul_92ns_6ns_98_5_1_Multiplier_4_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_92ns_6ns_98_5_1_U5/pnq_mul_92ns_6ns_98_5_1_Multiplier_4_U/tmp_product__0 output zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_92ns_6ns_98_5_1_U5/pnq_mul_92ns_6ns_98_5_1_Multiplier_4_U/tmp_product__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP zturn_i/multivariate_0/inst/dmul_64ns_64ns_64_7_max_dsp_1_U49/multivariate_ap_dmul_5_max_dsp_64_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP0/i_no_versal_es1_workaround.DSP multiplier stage zturn_i/multivariate_0/inst/dmul_64ns_64ns_64_7_max_dsp_1_U49/multivariate_ap_dmul_5_max_dsp_64_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP0/i_no_versal_es1_workaround.DSP/PATTERNDETECT is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP zturn_i/multivariate_0/inst/dmul_64ns_64ns_64_7_max_dsp_1_U49/multivariate_ap_dmul_5_max_dsp_64_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP7/i_no_versal_es1_workaround.DSP multiplier stage zturn_i/multivariate_0/inst/dmul_64ns_64ns_64_7_max_dsp_1_U49/multivariate_ap_dmul_5_max_dsp_64_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP7/i_no_versal_es1_workaround.DSP/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP zturn_i/multivariate_0/inst/dmul_64ns_64ns_64_7_max_dsp_1_U49/multivariate_ap_dmul_5_max_dsp_64_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/FULL_MAX_USAGE.DSP9/i_no_versal_es1_workaround.DSP multiplier stage zturn_i/multivariate_0/inst/dmul_64ns_64ns_64_7_max_dsp_1_U49/multivariate_ap_dmul_5_max_dsp_64_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/FULL_MAX_USAGE.DSP9/i_no_versal_es1_workaround.DSP/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_12s_80ns_90_5_1_U9/multivariate_mul_12s_80ns_90_5_1_Multiplier_8_U/buff0_reg multiplier stage zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_12s_80ns_90_5_1_U9/multivariate_mul_12s_80ns_90_5_1_Multiplier_8_U/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_13s_71s_71_5_1_U13/multivariate_mul_13s_71s_71_5_1_Multiplier_12_U/buff0_reg multiplier stage zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_13s_71s_71_5_1_U13/multivariate_mul_13s_71s_71_5_1_Multiplier_12_U/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/multivariate_mul_40ns_40ns_80_2_1_Multiplier_9_U/p_reg multiplier stage zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/multivariate_mul_40ns_40ns_80_2_1_Multiplier_9_U/p_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/multivariate_mul_40ns_40ns_80_2_1_Multiplier_9_U/p_reg__0 multiplier stage zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/multivariate_mul_40ns_40ns_80_2_1_Multiplier_9_U/p_reg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/multivariate_mul_40ns_40ns_80_2_1_Multiplier_9_U/p_reg__1 multiplier stage zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/multivariate_mul_40ns_40ns_80_2_1_Multiplier_9_U/p_reg__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/multivariate_mul_40ns_40ns_80_2_1_Multiplier_9_U/tmp_product multiplier stage zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/multivariate_mul_40ns_40ns_80_2_1_Multiplier_9_U/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/multivariate_mul_40ns_40ns_80_2_1_Multiplier_9_U/tmp_product__0 multiplier stage zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/multivariate_mul_40ns_40ns_80_2_1_Multiplier_9_U/tmp_product__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_43ns_36ns_79_3_1_U14/multivariate_mul_43ns_36ns_79_3_1_Multiplier_13_U/buff0_reg multiplier stage zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_43ns_36ns_79_3_1_U14/multivariate_mul_43ns_36ns_79_3_1_Multiplier_13_U/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_43ns_36ns_79_3_1_U14/multivariate_mul_43ns_36ns_79_3_1_Multiplier_13_U/buff0_reg__0 multiplier stage zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_43ns_36ns_79_3_1_U14/multivariate_mul_43ns_36ns_79_3_1_Multiplier_13_U/buff0_reg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_43ns_36ns_79_3_1_U14/multivariate_mul_43ns_36ns_79_3_1_Multiplier_13_U/buff0_reg__1 multiplier stage zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_43ns_36ns_79_3_1_U14/multivariate_mul_43ns_36ns_79_3_1_Multiplier_13_U/buff0_reg__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_43ns_36ns_79_3_1_U14/multivariate_mul_43ns_36ns_79_3_1_Multiplier_13_U/tmp_product multiplier stage zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_43ns_36ns_79_3_1_U14/multivariate_mul_43ns_36ns_79_3_1_Multiplier_13_U/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_43ns_36ns_79_3_1_U14/multivariate_mul_43ns_36ns_79_3_1_Multiplier_13_U/tmp_product__0 multiplier stage zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_43ns_36ns_79_3_1_U14/multivariate_mul_43ns_36ns_79_3_1_Multiplier_13_U/tmp_product__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_43ns_36ns_79_3_1_U14/multivariate_mul_43ns_36ns_79_3_1_Multiplier_13_U/tmp_product__1 multiplier stage zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_43ns_36ns_79_3_1_U14/multivariate_mul_43ns_36ns_79_3_1_Multiplier_13_U/tmp_product__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_54s_6ns_54_5_1_U1/multivariate_mul_54s_6ns_54_5_1_Multiplier_0_U/buff0_reg multiplier stage zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_54s_6ns_54_5_1_U1/multivariate_mul_54s_6ns_54_5_1_Multiplier_0_U/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_71ns_4ns_75_5_1_U2/multivariate_mul_71ns_4ns_75_5_1_Multiplier_1_U/buff0_reg multiplier stage zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_71ns_4ns_75_5_1_U2/multivariate_mul_71ns_4ns_75_5_1_Multiplier_1_U/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_73ns_6ns_79_5_1_U3/multivariate_mul_73ns_6ns_79_5_1_Multiplier_2_U/buff0_reg multiplier stage zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_73ns_6ns_79_5_1_U3/multivariate_mul_73ns_6ns_79_5_1_Multiplier_2_U/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77ns_6ns_83_5_1_U8/multivariate_mul_77ns_6ns_83_5_1_Multiplier_7_U/buff0_reg multiplier stage zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77ns_6ns_83_5_1_U8/multivariate_mul_77ns_6ns_83_5_1_Multiplier_7_U/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77s_54ns_130_5_1_U11/multivariate_mul_77s_54ns_130_5_1_Multiplier_10_U/buff0_reg__3 multiplier stage zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77s_54ns_130_5_1_U11/multivariate_mul_77s_54ns_130_5_1_Multiplier_10_U/buff0_reg__3/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77s_55ns_130_5_1_U12/multivariate_mul_77s_55ns_130_5_1_Multiplier_11_U/buff0_reg__3 multiplier stage zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_77s_55ns_130_5_1_U12/multivariate_mul_77s_55ns_130_5_1_Multiplier_11_U/buff0_reg__3/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_82ns_6ns_88_5_1_U7/multivariate_mul_82ns_6ns_88_5_1_Multiplier_6_U/buff0_reg multiplier stage zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_82ns_6ns_88_5_1_U7/multivariate_mul_82ns_6ns_88_5_1_Multiplier_6_U/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_83ns_6ns_89_5_1_U4/multivariate_mul_83ns_6ns_89_5_1_Multiplier_3_U/buff0_reg multiplier stage zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_83ns_6ns_89_5_1_U4/multivariate_mul_83ns_6ns_89_5_1_Multiplier_3_U/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_87ns_6ns_93_5_1_U6/multivariate_mul_87ns_6ns_93_5_1_Multiplier_5_U/buff0_reg multiplier stage zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_87ns_6ns_93_5_1_U6/multivariate_mul_87ns_6ns_93_5_1_Multiplier_5_U/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_92ns_6ns_98_5_1_U5/multivariate_mul_92ns_6ns_98_5_1_Multiplier_4_U/buff0_reg multiplier stage zturn_i/multivariate_0/inst/grp_pow_generic_double_s_fu_111/mul_92ns_6ns_98_5_1_U5/multivariate_mul_92ns_6ns_98_5_1_Multiplier_4_U/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 WARNING: [DRC DPOP-2] MREG Output pipelining: DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_12s_80ns_90_5_1_U9/pnq_mul_12s_80ns_90_5_1_Multiplier_8_U/buff0_reg multiplier stage zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_12s_80ns_90_5_1_U9/pnq_mul_12s_80ns_90_5_1_Multiplier_8_U/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 WARNING: [DRC DPOP-2] MREG Output pipelining: DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_13s_71s_71_5_1_U11/pnq_mul_13s_71s_71_5_1_Multiplier_10_U/buff0_reg multiplier stage zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_13s_71s_71_5_1_U11/pnq_mul_13s_71s_71_5_1_Multiplier_10_U/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 WARNING: [DRC DPOP-2] MREG Output pipelining: DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/pnq_mul_40ns_40ns_80_2_1_Multiplier_9_U/p_reg multiplier stage zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_40ns_40ns_80_2_1_U10/pnq_mul_40ns_40ns_80_2_1_Multiplier_9_U/p_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
@@ -1046,14 +1235,33 @@ WARNING: [DRC DPOP-2] MREG Output pipelining: DSP zturn_i/pnq_0/inst/grp_pow_gen
 WARNING: [DRC DPOP-2] MREG Output pipelining: DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_83ns_6ns_89_5_1_U4/pnq_mul_83ns_6ns_89_5_1_Multiplier_3_U/buff0_reg multiplier stage zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_83ns_6ns_89_5_1_U4/pnq_mul_83ns_6ns_89_5_1_Multiplier_3_U/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 WARNING: [DRC DPOP-2] MREG Output pipelining: DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_87ns_6ns_93_5_1_U6/pnq_mul_87ns_6ns_93_5_1_Multiplier_5_U/buff0_reg multiplier stage zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_87ns_6ns_93_5_1_U6/pnq_mul_87ns_6ns_93_5_1_Multiplier_5_U/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 WARNING: [DRC DPOP-2] MREG Output pipelining: DSP zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_92ns_6ns_98_5_1_U5/pnq_mul_92ns_6ns_98_5_1_Multiplier_4_U/buff0_reg multiplier stage zturn_i/pnq_0/inst/grp_pow_generic_double_s_fu_111/mul_92ns_6ns_98_5_1_U5/pnq_mul_92ns_6ns_98_5_1_Multiplier_4_U/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPREG-4] DSP48E1_PregDynOpmodeZmuxP:: The DSP48E1 cell zturn_i/multivariate_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U48/multivariate_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/i_no_versal_es1_workaround.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP with the given dynamic OPMODE[6:0] connections may lead to an unregistered asynchronous feedback path without the PREG attribute enabled. Please refer to the user guide and if one of the internal P feedback opmodes is possible for this design the PREG attribute must be set to 1, currently set to 0
 WARNING: [DRC DPREG-4] DSP48E1_PregDynOpmodeZmuxP:: The DSP48E1 cell zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/i_no_versal_es1_workaround.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP with the given dynamic OPMODE[6:0] connections may lead to an unregistered asynchronous feedback path without the PREG attribute enabled. Please refer to the user guide and if one of the internal P feedback opmodes is possible for this design the PREG attribute must be set to 1, currently set to 0
+INFO: [DRC AVAL-4] enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: zturn_i/multivariate_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U48/multivariate_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/i_no_versal_es1_workaround.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-4] enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: zturn_i/multivariate_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U48/multivariate_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/i_no_versal_es1_workaround.DSP48E1_GEN.DSP48E1_DEL/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-4] enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: zturn_i/multivariate_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U48/multivariate_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-4] enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: zturn_i/multivariate_0/inst/dmul_64ns_64ns_64_7_max_dsp_1_U49/multivariate_ap_dmul_5_max_dsp_64_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP0/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-4] enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: zturn_i/multivariate_0/inst/dmul_64ns_64ns_64_7_max_dsp_1_U49/multivariate_ap_dmul_5_max_dsp_64_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP1/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-4] enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: zturn_i/multivariate_0/inst/dmul_64ns_64ns_64_7_max_dsp_1_U49/multivariate_ap_dmul_5_max_dsp_64_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP2/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-4] enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: zturn_i/multivariate_0/inst/dmul_64ns_64ns_64_7_max_dsp_1_U49/multivariate_ap_dmul_5_max_dsp_64_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP3/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-4] enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: zturn_i/multivariate_0/inst/dmul_64ns_64ns_64_7_max_dsp_1_U49/multivariate_ap_dmul_5_max_dsp_64_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP4/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-4] enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: zturn_i/multivariate_0/inst/dmul_64ns_64ns_64_7_max_dsp_1_U49/multivariate_ap_dmul_5_max_dsp_64_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP5/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-4] enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: zturn_i/multivariate_0/inst/dmul_64ns_64ns_64_7_max_dsp_1_U49/multivariate_ap_dmul_5_max_dsp_64_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP6/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-4] enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: zturn_i/multivariate_0/inst/dmul_64ns_64ns_64_7_max_dsp_1_U49/multivariate_ap_dmul_5_max_dsp_64_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP7/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-4] enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: zturn_i/multivariate_0/inst/dmul_64ns_64ns_64_7_max_dsp_1_U49/multivariate_ap_dmul_5_max_dsp_64_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP8/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-4] enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: zturn_i/multivariate_0/inst/dmul_64ns_64ns_64_7_max_dsp_1_U49/multivariate_ap_dmul_5_max_dsp_64_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/FULL_MAX_USAGE.DSP9/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-4] enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: zturn_i/multivariate_0/inst/dmul_64ns_64ns_64_7_max_dsp_1_U49/multivariate_ap_dmul_5_max_dsp_64_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
 INFO: [DRC AVAL-4] enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/i_no_versal_es1_workaround.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
 INFO: [DRC AVAL-4] enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/i_no_versal_es1_workaround.DSP48E1_GEN.DSP48E1_DEL/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
 INFO: [DRC AVAL-4] enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-5] enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: zturn_i/multivariate_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U48/multivariate_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/i_no_versal_es1_workaround.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-5] enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: zturn_i/multivariate_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U48/multivariate_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/i_no_versal_es1_workaround.DSP48E1_GEN.DSP48E1_DEL/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-5] enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: zturn_i/multivariate_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U48/multivariate_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-5] enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: zturn_i/multivariate_0/inst/dmul_64ns_64ns_64_7_max_dsp_1_U49/multivariate_ap_dmul_5_max_dsp_64_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
 INFO: [DRC AVAL-5] enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/i_no_versal_es1_workaround.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
 INFO: [DRC AVAL-5] enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/i_no_versal_es1_workaround.DSP48E1_GEN.DSP48E1_DEL/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
 INFO: [DRC AVAL-5] enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: zturn_i/pnq_0/inst/dadd_64ns_64ns_64_7_full_dsp_1_U44/pnq_ap_dadd_5_full_dsp_64_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
-INFO: [Vivado 12-3199] DRC finished with 0 Errors, 57 Warnings, 6 Advisories
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 142 Warnings, 24 Advisories
 INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
 INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
 Loading data files...
@@ -1065,9 +1273,9 @@ Creating bitstream...
 Writing bitstream ./zturn_wrapper.bit...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
-INFO: [Common 17-186] '/home/duyliontran/xilinx/zturn-driver/zturn-driver.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Sun Mar 20 23:24:31 2022. For additional details about this file, please refer to the WebTalk help file at /tools/Xilinx/Vivado/2020.2/doc/webtalk_introduction.html.
+INFO: [Common 17-186] '/home/duyliontran/xilinx/zturn-driver/zturn-driver.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Sun Apr  3 18:05:45 2022. For additional details about this file, please refer to the WebTalk help file at /tools/Xilinx/Vivado/2020.2/doc/webtalk_introduction.html.
 INFO: [Common 17-83] Releasing license: Implementation
-19 Infos, 57 Warnings, 0 Critical Warnings and 0 Errors encountered.
+37 Infos, 142 Warnings, 0 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:25 ; elapsed = 00:00:21 . Memory (MB): peak = 3790.254 ; gain = 229.457 ; free physical = 22902 ; free virtual = 29295
-INFO: [Common 17-206] Exiting Vivado at Sun Mar 20 23:24:31 2022...
+write_bitstream: Time (s): cpu = 00:00:39 ; elapsed = 00:00:21 . Memory (MB): peak = 3952.344 ; gain = 251.824 ; free physical = 21959 ; free virtual = 28465
+INFO: [Common 17-206] Exiting Vivado at Sun Apr  3 18:05:45 2022...

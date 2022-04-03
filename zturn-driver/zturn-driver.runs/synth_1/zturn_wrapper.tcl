@@ -71,6 +71,7 @@ proc create_report { reportName command } {
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param ced.repoPaths /home/duyliontran/.Xilinx/Vivado/2020.2/xhub/ced_store/Vivado_example_project
+set_param chipscope.maxJobs 2
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg400-1
 
@@ -101,6 +102,7 @@ set_property used_in_implementation false [get_files -all /home/duyliontran/xili
 set_property used_in_implementation false [get_files -all /home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ip/zturn_rst_ps7_0_145M_0/zturn_rst_ps7_0_145M_0.xdc]
 set_property used_in_implementation false [get_files -all /home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ip/zturn_rst_ps7_0_145M_0/zturn_rst_ps7_0_145M_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ip/zturn_pnq_0_1/constraints/pnq_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ip/zturn_multivariate_0_0/constraints/multivariate_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ip/zturn_auto_pc_0/zturn_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/zturn_ooc.xdc]
 

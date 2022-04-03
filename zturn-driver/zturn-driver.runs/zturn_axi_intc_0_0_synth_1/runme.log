@@ -19,9 +19,9 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 18249
+INFO: [Synth 8-7075] Helper process launched with PID 16734
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2428.781 ; gain = 0.000 ; free physical = 8437 ; free virtual = 26093
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2428.785 ; gain = 0.000 ; free physical = 18936 ; free virtual = 25305
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'zturn_axi_intc_0_0' [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ip/zturn_axi_intc_0_0/synth/zturn_axi_intc_0_0.vhd:85]
 	Parameter C_FAMILY bound to: zynq - type: string 
@@ -30,10 +30,10 @@ INFO: [Synth 8-638] synthesizing module 'zturn_axi_intc_0_0' [/home/duyliontran/
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_NUM_INTR_INPUTS bound to: 4 - type: integer 
 	Parameter C_NUM_SW_INTR bound to: 0 - type: integer 
-	Parameter C_KIND_OF_INTR bound to: 32'b11111111111111111111111111111110 
+	Parameter C_KIND_OF_INTR bound to: 32'b11111111111111111111111111110110 
 	Parameter C_KIND_OF_EDGE bound to: 32'b11111111111111111111111111111111 
 	Parameter C_KIND_OF_LVL bound to: 32'b11111111111111111111111111111111 
-	Parameter C_ASYNC_INTR bound to: 32'b11111111111111111111111111111111 
+	Parameter C_ASYNC_INTR bound to: 32'b11111111111111111111111111110111 
 	Parameter C_NUM_SYNC_FF bound to: 2 - type: integer 
 	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter C_IVAR_RESET_VALUE bound to: 64'b0000000000000000000000000000000000000000000000000000000000010000 
@@ -58,10 +58,10 @@ INFO: [Synth 8-638] synthesizing module 'axi_intc' [/home/duyliontran/xilinx/ztu
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_NUM_INTR_INPUTS bound to: 4 - type: integer 
 	Parameter C_NUM_SW_INTR bound to: 0 - type: integer 
-	Parameter C_KIND_OF_INTR bound to: -2 - type: integer 
+	Parameter C_KIND_OF_INTR bound to: -10 - type: integer 
 	Parameter C_KIND_OF_EDGE bound to: -1 - type: integer 
 	Parameter C_KIND_OF_LVL bound to: -1 - type: integer 
-	Parameter C_ASYNC_INTR bound to: -1 - type: integer 
+	Parameter C_ASYNC_INTR bound to: -9 - type: integer 
 	Parameter C_NUM_SYNC_FF bound to: 2 - type: integer 
 	Parameter C_IVAR_RESET_VALUE bound to: 64'b0000000000000000000000000000000000000000000000000000000000010000 
 	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
@@ -83,10 +83,10 @@ INFO: [Synth 8-638] synthesizing module 'intc_core' [/home/duyliontran/xilinx/zt
 	Parameter C_DWIDTH bound to: 32 - type: integer 
 	Parameter C_NUM_INTR_INPUTS bound to: 4 - type: integer 
 	Parameter C_NUM_SW_INTR bound to: 0 - type: integer 
-	Parameter C_KIND_OF_INTR bound to: -2 - type: integer 
+	Parameter C_KIND_OF_INTR bound to: -10 - type: integer 
 	Parameter C_KIND_OF_EDGE bound to: -1 - type: integer 
 	Parameter C_KIND_OF_LVL bound to: -1 - type: integer 
-	Parameter C_ASYNC_INTR bound to: -1 - type: integer 
+	Parameter C_ASYNC_INTR bound to: -9 - type: integer 
 	Parameter C_NUM_SYNC_FF bound to: 2 - type: integer 
 	Parameter C_HAS_IPR bound to: 1 - type: integer 
 	Parameter C_HAS_SIE bound to: 1 - type: integer 
@@ -261,18 +261,18 @@ INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (5#1) [/home/duylio
 INFO: [Synth 8-256] done synthesizing module 'axi_intc' (6#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ipshared/47b8/hdl/axi_intc_v4_1_vh_rfs.vhd:3553]
 INFO: [Synth 8-256] done synthesizing module 'zturn_axi_intc_0_0' (7#1) [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ip/zturn_axi_intc_0_0/synth/zturn_axi_intc_0_0.vhd:85]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2428.781 ; gain = 0.000 ; free physical = 9971 ; free virtual = 27627
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2428.785 ; gain = 0.000 ; free physical = 20174 ; free virtual = 26564
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2428.781 ; gain = 0.000 ; free physical = 9967 ; free virtual = 27624
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2428.785 ; gain = 0.000 ; free physical = 20859 ; free virtual = 27248
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2428.781 ; gain = 0.000 ; free physical = 9967 ; free virtual = 27624
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2428.785 ; gain = 0.000 ; free physical = 20859 ; free virtual = 27248
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2428.781 ; gain = 0.000 ; free physical = 9959 ; free virtual = 27615
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2428.785 ; gain = 0.000 ; free physical = 20898 ; free virtual = 27288
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -287,27 +287,27 @@ Parsing XDC File [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources
 Finished Parsing XDC File [/home/duyliontran/xilinx/zturn-driver/zturn-driver.gen/sources_1/bd/zturn/ip/zturn_axi_intc_0_0/zturn_axi_intc_0_0_clocks.xdc] for cell 'U0'
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2577.445 ; gain = 0.000 ; free physical = 9874 ; free virtual = 27530
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2578.449 ; gain = 0.000 ; free physical = 20788 ; free virtual = 27178
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2577.445 ; gain = 0.000 ; free physical = 9874 ; free virtual = 27530
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2578.449 ; gain = 0.000 ; free physical = 20787 ; free virtual = 27177
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2577.445 ; gain = 148.664 ; free physical = 9869 ; free virtual = 27526
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2578.449 ; gain = 149.664 ; free physical = 20808 ; free virtual = 27199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2577.445 ; gain = 148.664 ; free physical = 9869 ; free virtual = 27526
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2578.449 ; gain = 149.664 ; free physical = 20808 ; free virtual = 27199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  /home/duyliontran/xilinx/zturn-driver/zturn-driver.runs/zturn_axi_intc_0_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2577.445 ; gain = 148.664 ; free physical = 9869 ; free virtual = 27526
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2578.449 ; gain = 149.664 ; free physical = 20809 ; free virtual = 27199
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
 ---------------------------------------------------------------------------------------------------
@@ -320,7 +320,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2577.445 ; gain = 148.664 ; free physical = 9855 ; free virtual = 27512
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2578.449 ; gain = 149.664 ; free physical = 20796 ; free virtual = 27187
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -333,8 +333,8 @@ Detailed RTL Component Info :
 	                9 Bit    Registers := 1     
 	                4 Bit    Registers := 1     
 	                3 Bit    Registers := 1     
-	                2 Bit    Registers := 7     
-	                1 Bit    Registers := 65    
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 64    
 +---Muxes : 
 	   7 Input   32 Bit        Muxes := 1     
 	   2 Input   32 Bit        Muxes := 2     
@@ -365,25 +365,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2577.445 ; gain = 148.664 ; free physical = 9832 ; free virtual = 27492
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2578.449 ; gain = 149.664 ; free physical = 20764 ; free virtual = 27163
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2577.445 ; gain = 148.664 ; free physical = 9633 ; free virtual = 27294
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2578.449 ; gain = 149.664 ; free physical = 20482 ; free virtual = 26882
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 2577.445 ; gain = 148.664 ; free physical = 9770 ; free virtual = 27435
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2578.449 ; gain = 149.664 ; free physical = 20472 ; free virtual = 26872
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 2577.445 ; gain = 148.664 ; free physical = 9762 ; free virtual = 27433
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2578.449 ; gain = 149.664 ; free physical = 20469 ; free virtual = 26869
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -401,37 +401,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2577.445 ; gain = 148.664 ; free physical = 9761 ; free virtual = 27423
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2578.449 ; gain = 149.664 ; free physical = 20590 ; free virtual = 26992
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2577.445 ; gain = 148.664 ; free physical = 9761 ; free virtual = 27423
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2578.449 ; gain = 149.664 ; free physical = 20590 ; free virtual = 26992
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2577.445 ; gain = 148.664 ; free physical = 9760 ; free virtual = 27423
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2578.449 ; gain = 149.664 ; free physical = 20590 ; free virtual = 26992
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2577.445 ; gain = 148.664 ; free physical = 9760 ; free virtual = 27423
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2578.449 ; gain = 149.664 ; free physical = 20590 ; free virtual = 26992
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2577.445 ; gain = 148.664 ; free physical = 9760 ; free virtual = 27422
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2578.449 ; gain = 149.664 ; free physical = 20590 ; free virtual = 26992
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2577.445 ; gain = 148.664 ; free physical = 9760 ; free virtual = 27422
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2578.449 ; gain = 149.664 ; free physical = 20590 ; free virtual = 26992
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -450,34 +450,34 @@ Report Cell Usage:
 |1     |LUT1 |     2|
 |2     |LUT2 |    17|
 |3     |LUT3 |    16|
-|4     |LUT4 |    12|
-|5     |LUT5 |    48|
+|4     |LUT4 |    13|
+|5     |LUT5 |    47|
 |6     |LUT6 |    25|
-|7     |FDRE |    99|
+|7     |FDRE |    96|
 |8     |FDSE |     2|
 +------+-----+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2577.445 ; gain = 148.664 ; free physical = 9760 ; free virtual = 27422
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2578.449 ; gain = 149.664 ; free physical = 20590 ; free virtual = 26992
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2577.445 ; gain = 0.000 ; free physical = 9811 ; free virtual = 27473
-Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2577.445 ; gain = 148.664 ; free physical = 9811 ; free virtual = 27473
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 2578.449 ; gain = 0.000 ; free physical = 20641 ; free virtual = 27043
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2578.449 ; gain = 149.664 ; free physical = 20641 ; free virtual = 27043
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2577.445 ; gain = 0.000 ; free physical = 9894 ; free virtual = 27557
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2578.449 ; gain = 0.000 ; free physical = 20722 ; free virtual = 27123
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2577.445 ; gain = 0.000 ; free physical = 9831 ; free virtual = 27494
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2578.449 ; gain = 0.000 ; free physical = 20652 ; free virtual = 27054
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 73 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:25 . Memory (MB): peak = 2577.445 ; gain = 148.844 ; free physical = 9969 ; free virtual = 27632
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:26 . Memory (MB): peak = 2578.449 ; gain = 149.844 ; free physical = 20794 ; free virtual = 27196
 INFO: [Common 17-1381] The checkpoint '/home/duyliontran/xilinx/zturn-driver/zturn-driver.runs/zturn_axi_intc_0_0_synth_1/zturn_axi_intc_0_0.dcp' has been generated.
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP zturn_axi_intc_0_0, cache-ID = 82fcfd44d9863736
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP zturn_axi_intc_0_0, cache-ID = f4e7304f260edbba
 INFO: [Coretcl 2-1174] Renamed 5 cell refs.
 INFO: [Common 17-1381] The checkpoint '/home/duyliontran/xilinx/zturn-driver/zturn-driver.runs/zturn_axi_intc_0_0_synth_1/zturn_axi_intc_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file zturn_axi_intc_0_0_utilization_synth.rpt -pb zturn_axi_intc_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Mar 11 17:39:13 2022...
+INFO: [Common 17-206] Exiting Vivado at Sun Apr  3 17:59:47 2022...
